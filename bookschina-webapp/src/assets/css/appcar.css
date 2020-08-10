@@ -1,0 +1,822 @@
+/*导航*/
+.carNav{
+    margin-top: 55px;
+  }
+  .carNav ul {
+    overflow: hidden;
+    background: #fff;
+  }
+  .carNav ul li {
+    float: left;
+    width: 49%;
+    border-top: 1.8px solid #fff;
+    text-align: center;
+  }
+  .carNav ul li a {
+    display: block;
+    font-size: 18px;
+    color: #333333;
+    font-family: 'Microsoft YaHei';
+    height: 50.4px;
+    line-height: 50.4px;
+  }
+  .carNav ul li.cur {
+    border-top: 1.8px solid #c40000;
+  }
+  .carNav ul li.shopCar.cur {
+    border-right: 1.2px solid #f3f3f3;
+  }
+  .carNav ul li.tstCar.cur {
+    border-left: 1.2px solid #f3f3f3;
+  }
+  .carNav ul li.cur a {
+    color: #e60000;
+  }
+  /*.content { display:none; }
+  .carLsit { margin-top: 0.1*60px; }*/
+  .activeTit {
+    overflow: hidden;
+    position: relative;
+    padding: 12px 12px 10.2px 14.4px;
+    background: #fff;
+    /*border-bottom: 0.02*60px solid #f3f3f3;*/
+  }
+  .activeTit .flag {
+    position: absolute;
+    height: 21.6px;
+    text-align: center;
+    border-radius: 21.6px;
+    line-height: 21.6px;
+    color: #fff;
+    font-size: 13.2px;
+    font-family: 'Microsoft YaHei';
+    width: 44.4px;
+    left: 10.8px;
+    top: 12px;
+    background: #e60000;
+  }
+  .activeTit .flag::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 4.8px solid transparent;
+    border-right: 4.8px solid transparent;
+    border-top: 6px solid #e60000;
+    position: absolute;
+    left: 6px;
+    bottom: -4.8px;
+  }
+  .activeMsg {
+    padding: 0 66px 0 49.8px;
+    overflow: hidden;
+    display: block;
+  }
+  /*.activeMsg a{ display:block; }*/
+  .activeName {
+    line-height: 20.4px;
+    margin-top: 1.2px;
+    font-size: 14.4px;
+    color: #333;
+    font-family: 'Microsoft YaHei';
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /*.activeName span { font-size: 0.24*60px; color: #333; font-family: 'Microsoft YaHei'; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }*/
+  .activeStatus {
+    line-height: 18px;
+    margin-top: 6px;
+    color: #333;
+    font-size: 12px;
+    font-family: 'Microsoft YaHei';
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /*.activeStatus span { color: #333; font-size: 0.2*60px; font-family: 'Microsoft YaHei'; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }*/
+  .activeStatus em {
+    color: #e60000;
+    font-size: 13.2px;
+  }
+  .activeLink {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: #e60000;
+    line-height: 25.2px;
+    text-align: right;
+  }
+  .activeLink a {
+    color: #e60000;
+    font-size: 13.2px;
+    display: block;
+    height: 25.2px;
+    font-family: 'Microsoft YaHei';
+  }
+  .activeLink p.fullred {
+    color: #333;
+    font-size: 13.2px;
+  }
+  .activeLink p.fullred span {
+    color: #e60000;
+    margin-left: 3px;
+  }
+  .activeLink p.fullred.red {
+    font-size: 12px;
+    color: #e60000;
+  }
+  .active {
+    margin-top: 12px;
+    /* margin-bottom: 24px; */
+  }
+  ul.activeList {
+    background: #fff;
+    padding-bottom: 12px;
+  }
+  ul.activeList li {
+    padding: 0 12px;
+    position: relative;
+  }
+  ul.activeList.bef li::before {
+    content: "";
+    width: 0.6px;
+    height: 100%;
+    /* line-height: 50px; */
+    border-left: 1px dashed #e5e5e5;
+    position: absolute;
+    top: -27px;
+    left: 21px;
+    padding-bottom: 8.4px;
+  }
+  ul.activeList li.giftWrap {
+    margin-top: 12px;
+  }
+  ul.activeList li .listCheckBox {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-size: 0px;
+    text-indent: -999px;
+    overflow: hidden;
+    /* background: url('http://o.bookschina.com/images/wap/checkboxicon.png') no-repeat 12px 46.2px; */
+    left: 0;
+    top: 50%;
+    /* 垂直向上偏移自身50%的高度 */
+    transform: translateY(-50%);
+    /* margin: auto 0; */
+    background-size: 19.2px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  .bookName a {
+    font-size: 13.2px;
+  }
+  ul.activeList li .listCheckBox.selected {
+    /* background: url('http://o.bookschina.com/images/wap/carselected.png') no-repeat 12px 46.2px; */
+    background-size: 19.2px;
+  }
+  ul.activeList li .book {
+    /*border-bottom: 1px solid #f2f2f2;*/
+    padding: 15px 0 0px 24px;
+    font-size: 12px;
+    position: relative;
+  }
+  /*ul.activeList li .book::after{content:"";  border-bottom: 1px solid #f2f2f2; position:absolute; width: 95%;  bottom: 0*60px;}*/
+  ul.activeList li:last-child .book,
+  .activeList ul li .book::after .book {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  ul.activeList li:last-child .book,
+  .activeList ul li .book::after .book {
+    border-bottom: none;
+  }
+  ul.activeList li .book .bookInner {
+    position: relative;
+    padding-left: 96.42px;
+    min-height: 75px;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 18px;
+  }
+  ul.activeList li .book .bookCover {
+    outline: 1px solid #ddd;
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    left: 3.6px;
+    top: 4.2px;
+    line-height: 75px;
+    text-align: center;
+  }
+  ul.activeList li .book .bookCover a {
+    display: block;
+  }
+  ul.activeList li .book .bookCover .limitText,
+  ul.activeList li .book .bookCover .limitText2 {
+    position: absolute;
+    width: 100%;
+    font-size: 10.8px;
+    color: #fff;
+    height: 14.4px;
+    line-height: 14.4px;
+    background: red;
+    opacity: 0.7;
+  }
+  ul.activeList li .book .bookCover .limitText2 {
+    display: none;
+  }
+  ul.activeList li .book .bookCover img {
+    height: 75px;
+    max-width: 75px;
+  }
+  /*ul.activeList li .bookText { }
+  ul.activeList li .bookText .name {  }*/
+  ul.activeList li .bookText a.name {
+    line-height: 19.2px;
+    font-size: 13.2px;
+    color: #333333;
+    font-family: 'Microsoft YaHei';
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  ul.activeList li .bookText .priceWrap {
+    overflow: hidden;
+    font-size: 13.2px;
+    line-height: 19.2px;
+    margin-top: 7.2px;
+    font-family: 'Microsoft YaHei';
+  }
+  ul.activeList li .bookText .salesPrice {
+    float: left;
+    color: #e60000;
+  }
+  ul.activeList li .bookText .price {
+    float: left;
+    color: #999999;
+    margin-left: 15.6px;
+    text-decoration: line-through;
+  }
+  ul.activeList li .bookText .oparateArea {
+    overflow: hidden;
+    margin-top: 9.6px;
+  }
+  ul.activeList li .bookText .countEdit {
+    float: left;
+    overflow: hidden;
+    border: 1.2px solid #f3f3f3;
+  }
+  ul.activeList li .bookText .countEdit span {
+    float: left;
+    width: 26.4px;
+    height: 24px;
+    text-indent: -999px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  ul.activeList li .bookText .countEdit span.decrement {
+    background: url('../../assets/images/shopcar/carreduce.png') no-repeat center;
+    background-size: 13.2px 1.8px;
+    border-right: 1px solid #f3f3f3;
+  }
+  ul.activeList li .bookText .countEdit span.increment {
+    background: url('../../assets/images/shopcar/carplus.png') no-repeat center;
+    background-size: 13.2px;
+    border-left: 1px solid #f3f3f3;
+  }
+  ul.activeList li .bookText .countEdit span.decrem.disabled {
+    /* background: url('../../assets/images/shopcar/carreducedisabled.png') no-repeat center; */
+    background-size: 13.2px 1.8px;
+  }
+  ul.activeList li .bookText .countEdit span.increm.disabled {
+    /* background: url('../../assets/images/shopcar/wap/carplusdisabled.png') no-repeat center; */
+    background-size: 13.2px;
+  }
+  ul.activeList li .bookText .countEdit input {
+    float: left;
+    height: 22.8px;
+    border: none;
+    width: 33.6px;
+    margin: 0 6px;
+    text-align: center;
+    line-height: 22.8px;
+    color: #333;
+    font-size: 13.2px;
+  }
+  ul.activeList li .otherEdit {
+    float: right;
+    overflow: hidden;
+  }
+  ul.activeList li .otherEdit .addFav {
+    float: left;
+    height: 24px;
+    width: 24px;
+    background: url('../../assets/images/shopcar/carslec.png') no-repeat center;
+    background-size: 18px 17.4px;
+    text-indent: -999px;
+    overflow: hidden;
+    margin-right: 16.8px;
+    cursor: pointer;
+  }
+  ul.activeList li .otherEdit .delete {
+    float: left;
+    height: 24px;
+    width: 24px;
+    background: url('../../assets/images/shopcar/cardelet.png') no-repeat center;
+    background-size: 20.4px;
+    text-indent: -999px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .activeSelect {
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 12px;
+  }
+  .activeSelect i {
+    float: left;
+    height: 19.2px;
+    border: 1.2px solid #e60000;
+    line-height: 16.8px;
+    border-radius: 3px;
+    padding: 0 3.6px;
+    color: #e60000;
+  }
+  .activeSelect em {
+    padding-left: 3px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 8.4px;
+  }
+  .activeSelect span {
+    float: right;
+    /* background: url('http://o.bookschina.com/images/wap/activeselcetdown.png') no-repeat right center; */
+    padding-right: 16.8px;
+    height: 19.2px;
+    line-height: 19.2px;
+    color: #333333;
+    font-size: 12px;
+    background-size: 9px 4.8px;
+  }
+  /*赠品数量*/
+  .freeGiftNum {
+    color: #333333;
+    font-size: 13.2px;
+    font-family: Arial;
+    line-height: 19.2px;
+    margin-top: 3px;
+  }
+  /*包邮*/
+  ul.activeList li .bookText .name .freePost {
+    display: inline-block;
+    color: #fff;
+    background: #e60000;
+    font-size: 10.8px;
+    height: 13.2px;
+    line-height: 13.2px;
+    padding: 0 3.6px;
+    border-radius: 3px;
+    margin-right: 6px;
+  }
+  /*赠品*/
+  ul.activeList li .bookText .name .giftFlag {
+    display: inline-block;
+    color: #fff;
+    background: #e60000;
+    font-size: 10.8px;
+    height: 13.2px;
+    line-height: 13.2px;
+    padding: 0 3.6px;
+    border-radius: 3px;
+    margin-right: 6px;
+  }
+  ul.activeList li.freeGift .book {
+    padding: 12px 0 0 24px;
+    border-bottom: none;
+  }
+  ul.activeList li.freeGift .book .bookCover {
+    height: 54px;
+    width: 54px;
+    left: 21.6px;
+  }
+  ul.activeList li.freeGift .book .bookCover img {
+    height: 54px;
+  }
+  /*换购*/
+  .changeBuyTit {
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+  .changeBuyTit span {
+    float: left;
+    height: 21.6px;
+    background-color: #1459ca;
+    /*border: 0.02*60px solid #ff4f1a;*/
+    line-height: 21.6px;
+    padding: 0 6.6px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+  }
+  .changeBuyTit span::after {
+    content: "∨";
+    padding-left: 3px;
+    font-stretch: ultra-expanded;
+    font-size: 7.2px;
+    transform: scale(1, 3);
+    filter: dropshadow(color=black, offx=1, offy=0) dropshadow(color=black, offx=2, offy=0) dropshadow(color=black, offx=3, offy=0);
+  }
+  .changeBuyTit i {
+    float: left;
+    height: 21.6px;
+    line-height: 21.6px;
+    color: #1459ca;
+    font-weight: 600;
+    font-size: 12px;
+    margin-right: 12px;
+  }
+  ul.activeList li .bookText .name .changeBuyFlag {
+    display: inline-block;
+    color: #fff;
+    background: #ff4f1a;
+    font-size: 10.8px;
+    height: 14.4px;
+    line-height: 14.4px;
+    padding: 0 3.6px;
+    border-radius: 3px;
+    margin-right: 6px;
+  }
+  ul.activeList li.changeBuy .book {
+    padding: 12px 0 0 24px;
+    border-bottom: none;
+  }
+  ul.activeList li.changeBuy .book .bookCover {
+    height: 54px;
+    width: 54px;
+    left: 21.6px;
+  }
+  ul.activeList li.changeBuy .book .bookCover img {
+    height: 54px;
+  }
+  ul.activeList li.changeBuy .changeBuyNum {
+    float: left;
+    color: #333333;
+    font-size: 13.2px;
+    font-family: Arial;
+    line-height: 19.2px;
+    margin-top: 3px;
+  }
+  /*缺货标记*/
+  ul.activeList li .zeroStock {
+    position: absolute;
+    background: #aaaaaa;
+    padding: 0 4.8px;
+    border-radius: 1.8px;
+    overflow: hidden;
+    left: 4.8px;
+    top: 48px;
+    height: 15.6px;
+    line-height: 15.6px;
+    color: #fff;
+    font-size: 10.8px;
+    z-index: 100;
+  }
+  ul.activeList li .book .bookCover img.iconTe {
+    position: absolute;
+    width: 22.8px;
+    height: 14.4px;
+    right: -10px;
+    top: -1px;
+  }
+  .footer {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    font-size: 12px;
+    z-index: 101;
+    box-shadow: 0 0 6px #e3e2e2;
+  }
+  .checkgroup {
+    overflow: hidden;
+    position: relative;
+  }
+  .footer .allSelect {
+    cursor: pointer;
+    float: left;
+    width: 20px;
+    text-align: right;
+    height: 60px;
+    line-height: 60px;
+    color: #333333;
+    font-size: 14.4px;
+    /* background: url(http://o.bookschina.com/images/wap/checkboxicon.png) no-repeat 12px center; */
+    background-size: 19.2px;
+  }
+  .footer .allSelect.selectAll {
+    /* background: url(http://o.bookschina.com/images/wap/carselected.png) no-repeat 12px center; */
+    background-size: 19.2px;
+  }
+  .footer .totalWrap {
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+  }
+  .footer .settlement {
+    float: right;
+    width: 132px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #B0B0B0;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Microsoft YaHei';
+    cursor: pointer;
+  }
+  .footer .settlement.cur {
+    background: #e60000;
+  }
+  .footer .settlement span {
+    font-size: 14.4px;
+  }
+  .footer .carResult {
+    float: right;
+    text-align: right;
+    overflow: hidden;
+    margin-right: 12px;
+  }
+  .footer .carResult .totalMoney {
+    font-size: 13.2px;
+    line-height: 19.2px;
+    color: #333;
+    font-family: 'Microsoft YaHei';
+    margin-top: 10.8px;
+  }
+  .footer .carResult .totalMoney i {
+    color: #e60000;
+  }
+  .footer .carResult .totalDiscount {
+    font-size: 12px;
+    line-height: 16.8px;
+    color: #333;
+    font-family: 'Microsoft YaHei';
+    margin-top: 4.2px;
+  }
+  .footer .carResult .totalDiscount i {
+    color: #e60000;
+  }
+  .footer .editWrap {
+    float: right;
+    overflow: hidden;
+    text-align: center;
+    display: none;
+  }
+  .footer .editWrap .clearnoStock {
+    /* background: url(http://o.bookschina.com/images/wap/clearbtn.png) no-repeat 10.8px center; */
+    background-size: 13.8px 15px;
+    cursor: pointer;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    color: #e50f14;
+    font-size: 14.4px;
+    width: 108px;
+    padding-left: 9px;
+  }
+  .footer .editWrap .deleteSelcted {
+    cursor: pointer;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    color: #666666;
+    font-size: 14.4px;
+    width: 96px;
+  }
+  .footer .editWrap .colectSelcted {
+    cursor: pointer;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 14.4px;
+    background: #ff4f1a;
+    width: 96px;
+  }
+  /*活动筛选弹层*/
+  body .layui-m-layer .layui-m-layer-footer.activePop {
+    width: 100%;
+    background: #fff;
+    bottom: 0;
+    border-radius: 0;
+    padding: 0;
+  }
+  body .layui-m-layer .layui-m-layer-footer.activePop .layui-m-layercont {
+    padding: 0;
+    border-radius: 0;
+  }
+  .activeSelectWrap .activeSelectList {
+    text-align: left;
+  }
+  .activeSelectWrap .tit {
+    text-align: center;
+    font-size: 14.4px;
+    height: 40.8px;
+    line-height: 40.8px;
+    color: #333333;
+    position: relative;
+    margin: 0 12px;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  .activeSelectWrap .tit span {
+    cursor: pointer;
+    position: absolute;
+    height: 16.8px;
+    width: 16.8px;
+    /* background: url('http://o.bookschina.com/images/wap/activeclose.png') no-repeat center; */
+    background-size: cover;
+    top: 9px;
+    right: 0;
+  }
+  .activeSelectList {
+    padding: 8.4px 0 16.2px 0;
+  }
+  .activeSelectList .selectActiveList {
+    cursor: pointer;
+    padding-left: 43.8px;
+    color: #333;
+    font-size: 14.4px;
+    height: 46.8px;
+    line-height: 46.8px;
+    /* background: url('http://o.bookschina.com/images/wap/noactiveselect.png') no-repeat 12px center; */
+    background-size: 19.2px;
+  }
+  .activeSelectList .selectActiveList.on {
+    /* background: url('http://o.bookschina.com/images/wap/activeselect.png') no-repeat 12px center; */
+    background-size: 19.2px;
+  }
+  body .layui-m-layer .layui-m-layer-msg {
+    top: -100px;
+    bottom: initial;
+  }
+  /*结算状态*/
+  .ball:before {
+    content: "";
+    background-color: #fff;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    margin: -2px 2px -2px -6px;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    border: 2px solid #fff;
+    border-bottom-color: transparent;
+    height: 12px;
+    width: 12px;
+    background: transparent !important;
+    display: inline-block;
+    -webkit-animation: rotate 0.75s 0s linear infinite;
+    animation: rotate 0.75s 0s linear infinite;
+  }
+  @keyframes rotate {
+    0% {
+      -webkit-transform: rotate(0deg) scale(1);
+      transform: rotate(0deg) scale(1);
+    }
+    50% {
+      -webkit-transform: rotate(180deg) scale(0.6);
+      transform: rotate(180deg) scale(0.6);
+    }
+    100% {
+      -webkit-transform: rotate(360deg) scale(1);
+      transform: rotate(360deg) scale(1);
+    }
+  }
+  @keyframes scale {
+    30% {
+      -webkit-transform: scale(0.3);
+      transform: scale(0.3);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  /*购物车没有商品*/
+  /* .noProductWrap {
+    display: none;
+  } */
+  .noProductIcon {
+    text-align: center;
+    background: #fff;
+    overflow: hidden;
+    margin-top: 6px;
+  }
+  .noProductIcon img {
+    display: block;
+    width: 45px;
+    margin: 45px auto 0;
+  }
+  .noProductIcon span {
+    color: #333333;
+    font-size: 13.2px;
+    display: block;
+    line-height: 19.2px;
+    margin-top: 9px;
+  }
+  .noProductIcon a {
+    display: block;
+    margin: auto;
+    width: 240px;
+    margin: 27px auto 33px;
+    background: #e60000;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15.6px;
+    height: 39.6px;
+    line-height: 39.6px;
+    border-radius: 39.6px;
+  }
+  .footer {
+    height: 84px;
+  }
+  .myf {
+    font-size: 13.2px;
+    line-height: 24px;
+    text-indent: 12px;
+    background: #FFF8DC;
+  }
+  .myf span {
+    color: #FF3030;
+  }
+  .myf a {
+    color: #FF3030;
+    padding-left: 13.2px;
+  }
+  .loading {
+    text-align: center;
+    color: #999999;
+    font-size: 14.4px;
+    background: #f3f3f3;
+    height: 52.8px;
+    line-height: 52.8px;
+  }
+  #loding {
+    width: 19.2px;
+    height: 19.2px;
+    margin: 20px auto;
+  }
+  .ball-clip-rotate {
+    background-color: #fff;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    margin: 2px;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    border: 2px solid #fff;
+    border-bottom-color: transparent;
+    height: 12px;
+    width: 16px;
+    background: transparent !important;
+    display: inline-block;
+    -webkit-animation: rotate 0.75s 0s linear infinite;
+    animation: rotate 0.75s 0s linear infinite;
+  }
+  
+  /* 新增shopCart */
+  #shopCart{
+    /* margin-bottom:120px; */
+  }
+  @keyframes rotate {
+    0% {
+      -webkit-transform: rotate(0deg) scale(1);
+      transform: rotate(0deg) scale(1);
+    }
+    50% {
+      -webkit-transform: rotate(180deg) scale(0.6);
+      transform: rotate(180deg) scale(0.6);
+    }
+    100% {
+      -webkit-transform: rotate(360deg) scale(1);
+      transform: rotate(360deg) scale(1);
+    }
+  }
+  @keyframes scale {
+    30% {
+      -webkit-transform: scale(0.3);
+      transform: scale(0.3);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  

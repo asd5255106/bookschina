@@ -1,0 +1,951 @@
+.content .bookCover {
+  position: relative;
+  padding: 18px 0;
+  background: #fff;
+}
+.content .bookCover .bookPic {
+  border: 1px solid #fef0f0;
+  text-align: center;
+  width: 211.2px;
+  margin: auto;
+  position: relative;
+}
+.content .bookCover .bookPic img {
+  max-width: 100%;
+  height: 210px;
+}
+.content .bookCover .bookPic .tejiaIcon {
+  position: absolute;
+  background: url('http://o.bookschina.com/images/wap/tejiaIcon.png') no-repeat;
+  background-size: cover;
+  height: 41.4px;
+  width: 41.4px;
+  top: 0;
+  right: 0;
+}
+.content .bookCover .rederScore {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  height: 40.8px;
+  border: 2px solid #ff551e;
+  border-right: none;
+  border-radius: 38.4px 0 0 38.4px;
+  display: table;
+  padding: 0 12px;
+}
+.content .bookCover .rederScoreInner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 18px;
+}
+.content .bookCover .rederScoreInner span {
+  font-size: 12px;
+  color: #ff551e;
+  display: block;
+}
+.content .bookInfor {
+  padding: 15px 12px 0;
+  background: #fff;
+}
+.content .bookInfor h1 {
+  font-size: 16.8px;
+  line-height: 22.8px;
+  color: #000;
+}
+.content .bookInfor p {
+  margin-top: 6px;
+  color: #333333;
+  font-size: 12px;
+  line-height: 18px;
+}
+.content .bookPrice {
+  overflow: hidden;
+  background: #fff;
+  padding: 9px 12px 0;
+}
+.content .bookPrice .salePrice {
+  float: left;
+  overflow: hidden;
+  line-height: 24px;
+}
+.content .bookPrice .salePrice span {
+  float: left;
+}
+.content .bookPrice .salePrice .urerLeave {
+  font-size: 12px;
+  color: #e60000;
+  margin: 1.2px 3.6px 0 0;
+}
+.content .bookPrice .salePrice .price {
+  font-size: 18px;
+  color: #e60000;
+  font-weight: bold;
+}
+.content .bookPrice .salePrice .discount {
+  font-size: 12px;
+  color: #333333;
+  margin: 1.2px 0 0 9px;
+}
+.content .bookPrice .otherPrice {
+  float: right;
+  overflow: hidden;
+  line-height: 24px;
+}
+.content .bookPrice .otherPrice .startPrice {
+  float: left;
+  color: #666666;
+  font-size: 12px;
+  margin: 1.2px 16.8px 0 0;
+}
+.content .bookPrice .otherPrice .originalPrice {
+  float: left;
+  color: #666666;
+  font-size: 12px;
+  margin: 1.2px 0 0 0;
+}
+.content .activeList {
+  overflow: hidden;
+  padding: 0 12px 12px;
+  background: #fff;
+}
+.content .activeList a {
+  float: left;
+  border: 2px solid #e60000;
+  color: #e60000;
+  height: 36px;
+  line-height: 32.4px;
+  font-size: 13.2px;
+  padding: 0 12px;
+  margin-right: 12px;
+  margin-top: 12px;
+  border-radius: 3px;
+}
+.content .inforLInk {
+  padding: 0 12px;
+  background: #fff;
+  /*没有活动时需要加上*/
+  /*margin-top: 0.16*60px;*/
+}
+.content .inforLInk .inforLinkItem {
+  border-bottom: 1.2px solid #f3f3f3;
+  height: 42px;
+  line-height: 40.8px;
+  position: relative;
+}
+.content .inforLInk .inforLinkItem a {
+  display: block;
+  height: 40.8px;
+  color: #333;
+  font-size: 13.2px;
+  background: url('http://o.bookschina.com/images/wap/rightarrow.png') no-repeat right;
+  background-size: 9.6px 16.8px;
+}
+.content .inforLInk .inforLinkItem a i {
+  color: #e60000;
+  margin: 0 7.8px;
+}
+.content .inforLInk .inforLinkItem span {
+  background: url('http://o.bookschina.com/images/wap/rightarrow.png') no-repeat center;
+  background-size: 9.6px 16.8px;
+  height: 40.8px;
+  width: 9.6px;
+  top: 0;
+  right: 6px;
+  position: absolute;
+  display: none;
+}
+.content .inforLInk .seriesBook {
+  border-bottom: 1.2px solid #f3f3f3;
+  height: 42px;
+  line-height: 40.8px;
+  position: relative;
+  font-size: 13.2px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .inforLInk .seriesBook a {
+  color: #e60000;
+  text-decoration: underline;
+}
+.content .service {
+  padding: 0 12px;
+}
+.content .service ul {
+  overflow: hidden;
+}
+.content .service ul li {
+  /* height: 0.66*60px; line-height: 0.66*60px;*/
+  float: left;
+  font-size: 13.2px;
+  color: #333333;
+  background: url('http://o.bookschina.com/images/wap/seviceIcon.png') no-repeat left;
+  background-size: 15.6px;
+  padding-left: 25.2px;
+  margin-right: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.content .rempxinder {
+  padding: 9px 12px;
+  background: #fff;
+}
+.content .rempxinder p {
+  color: #e60000;
+  font-size: 12px;
+  line-height: 18px;
+}
+.content .BookComment {
+  margin-top: 9.6px;
+  background: #fff;
+}
+.BookComment .commentTit {
+  box-shadow: 0px 0px 10px #dddcdd;
+  height: 42px;
+  line-height: 40.8px;
+  overflow: hidden;
+  padding: 0 12px;
+}
+.BookComment .commentTit b {
+  color: #333333;
+  font-size: 15.6px;
+  float: left;
+  height: 40.8px;
+}
+.BookComment .commentTit span {
+  font-size: 15.6px;
+  color: #e60000;
+  margin-left: 7.8px;
+  height: 40.8px;
+  float: left;
+}
+.BookComment .commentContent {
+  padding: 0 12px;
+}
+.BookComment .commentContent .commentItem {
+  border-bottom: 2px solid #f3f3f3;
+}
+.BookComment .commentContent .commentItem .ItemTit {
+  overflow: hidden;
+  margin-top: 9px;
+}
+.BookComment .commentContent .commentItem .userInfor {
+  float: left;
+  overflow: hidden;
+  line-height: 18px;
+}
+.BookComment .commentContent .commentItem .userInfor .userName {
+  float: left;
+  font-size: 12px;
+  color: #666666;
+}
+.BookComment .commentContent .commentItem .userInfor .userLeave {
+  float: left;
+  font-size: 12px;
+  color: #e60000;
+  margin-left: 6px;
+}
+.BookComment .commentContent .commentItem .startWrap {
+  overflow: hidden;
+  line-height: 12px;
+  margin-top: 3px;
+  float: right;
+}
+.BookComment .commentContent .commentItem .startWrap span {
+  float: left;
+  height: 12px;
+  width: 12px;
+  margin: 0 0 0 3px;
+}
+.BookComment .commentContent .commentItem .startWrap span.full {
+  background-image: url('http://o.bookschina.com/images/wap/full.png');
+  background-size: 12px 12px;
+}
+.BookComment .commentContent .commentItem .startWrap span.half {
+  background-image: url('http://o.bookschina.com/images/wap/halfstart.png');
+  background-size: 12px 12px;
+}
+.BookComment .commentContent .commentItem .startWrap span.empty {
+  background-image: url('http://o.bookschina.com/images/wap/empty.png');
+  background-size: 12px 12px;
+}
+.BookComment .commentContent .commentItem .userComment p {
+  line-height: 20.4px;
+  color: #333333;
+  font-size: 13.2px;
+  overflow: hidden;
+}
+.BookComment .commentContent .commentItem .userComment b {
+  font-weight: bold;
+  font-size: 14.4px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 4.8px 90px 4.8px 0;
+}
+.BookComment .commentFoot {
+  overflow: hidden;
+  line-height: 19.2px;
+  margin-top: 12px;
+  padding-bottom: 6px;
+}
+.BookComment .commentFoot .commentTime {
+  float: left;
+}
+.BookComment .commentFoot .commentTime span {
+  display: block;
+  color: #666666;
+  font-size: 10.8px;
+}
+.BookComment .commentFoot .commentOparate {
+  float: right;
+  overflow: hidden;
+}
+.BookComment .commentFoot .commentOparate span {
+  cursor: pointer;
+  float: left;
+  color: #999999;
+  font-size: 13.2px;
+  width: 39px;
+  padding-left: 20.4px;
+}
+.BookComment .commentFoot .commentOparate span.supportBtn {
+  background: url('http://o.bookschina.com/images/wap/supportBtn.png') no-repeat left;
+  background-size: 13.2px;
+}
+.BookComment .commentFoot .commentOparate span.oppositionBtn {
+  background: url('http://o.bookschina.com/images/wap/oppositionBtn.png') no-repeat left;
+  background-size: 13.2px;
+}
+.BookComment .commentFoot .commentOparate span.supportBtn.cur {
+  background: url('http://o.bookschina.com/images/wap/cursupportBtn.png') no-repeat left;
+  background-size: 13.2px;
+}
+.BookComment .commentFoot .commentOparate span.oppositionBtn.cur {
+  background: url('http://o.bookschina.com/images/wap/curoppositionBtn.png') no-repeat left;
+  background-size: 13.2px;
+}
+.BookComment .ztReply {
+  overflow: hidden;
+  line-height: 20.4px;
+  padding-bottom: 6px;
+}
+.BookComment .ztReply p {
+  color: #666666;
+  font-size: 12px;
+}
+.BookComment .commentLink {
+  overflow: hidden;
+  background: #fff;
+  /*padding: 0.2*60px 0.2*60px 0.22*60px;*/
+  padding: 12px 12px 9.6px;
+}
+.BookComment .commentLink a {
+  display: block;
+  border: 1px solid #999999;
+  text-align: center;
+  height: 26.4px;
+  line-height: 25.2px;
+  color: #666666;
+  font-size: 14.4px;
+  width: 60%;
+  margin: auto;
+  border-radius: 3px;
+}
+.bookinforDetail {
+  margin-top: 9.6px;
+  background: #fff;
+  margin-bottom: 52.8px;
+}
+.bookinforDetail .DetailTit {
+  padding: 12.6px 0 14.4px;
+  background: #fff;
+  box-shadow: 0px 0px 10px #dddcdd;
+  font-size: 15.6px;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+}
+.bookinforDetail .baseInfor {
+  padding: 12px;
+  border-bottom: 1px solid #f3f3f3;
+}
+.bookinforDetail .baseInfor ul {
+  overflow: hidden;
+}
+.bookinforDetail .baseInfor ul li {
+  float: left;
+  width: 50%;
+  font-size: 12px;
+  color: #333;
+  line-height: 24px;
+}
+.bookinforDetail .detaiInfor {
+  padding: 0 12px;
+}
+.bookinforDetail .detaiInfor .tit {
+  font-size: 15.6px;
+  color: #333;
+  font-weight: bold;
+  line-height: 21.6px;
+  margin: 24px 0 6px;
+}
+.bookinforDetail .detaiInfor p {
+  color: #333;
+  font-size: 13.2px;
+  line-height: 21.6px;
+  word-wrap: break-word;
+}
+.bookinforDetail .detaiInfor img {
+  width: 100%;
+}
+.bookinforDetail .detaimulu {
+  color: #333;
+  font-size: 13.2px;
+  line-height: 21.6px;
+}
+.bookinforDetail .detaimulu #catalogSwitch {
+  overflow: hidden;
+}
+.bookinforDetail .switch {
+  display: none;
+  height: 36px;
+  margin: 16.8px 0 0;
+  background: #f3f3f3;
+  text-align: center;
+  font-size: 13.2px;
+  line-height: 36px;
+  cursor: pointer;
+}
+.bookinforDetail .switch span {
+  display: block;
+  height: 36px;
+  color: #333;
+}
+.bookinforDetail .switch .open {
+  color: #e60000;
+}
+.bookinforDetail .switch span .icon {
+  display: inline-block;
+  background: url('http://o.bookschina.com/images/wap/downarrow.png') no-repeat center;
+  background-size: cover;
+  margin-left: 6px;
+  width: 14.4px;
+  height: 7.8px;
+}
+.bookinforDetail .switch .open {
+  color: #e60000;
+}
+.bookinforDetail .switch .open .icon {
+  background: url('http://o.bookschina.com/images/wap/reduparrow.png') no-repeat center;
+  background-size: cover;
+}
+.fiveStartMoreLink a {
+  display: block;
+  height: 49.2px;
+  line-height: 49.2px;
+  background: #fff;
+  color: #757575;
+  font-size: 14.4px;
+  text-align: center;
+}
+/*相关图书*/
+.relativeBook .tit {
+  padding: 0 12px;
+  height: 40.8px;
+  line-height: 40.8px;
+  background: #f3f3f3;
+  font-size: 15.6px;
+  color: #333333;
+  margin-top: 18px;
+  font-weight: bold;
+}
+.relativeBook ul {
+  overflow: hidden;
+  background: #f3f3f3;
+}
+.relativeBook ul li {
+  float: left;
+  width: 50%;
+  overflow: hidden;
+  padding: 0 2px 2px 0;
+}
+.relativeBook ul li a {
+  display: block;
+}
+.relativeBook ul li .bookWrap {
+  background: #fff;
+  padding: 9px 0 10.2px 0;
+}
+.relativeBook ul li .cover {
+  text-align: center;
+  padding: 3px 0;
+}
+.relativeBook ul li .cover img {
+  max-width: 100%;
+  height: 120px;
+}
+.relativeBook ul li .name {
+  color: #000;
+  font-size: 13.2px;
+  line-height: 18px;
+  margin-top: 7.2px;
+  padding: 0 9px 0 12px;
+  height: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.relativeBook ul li .author {
+  color: #666666;
+  font-size: 12px;
+  line-height: 18px;
+  height: 18px;
+  margin-top: 4.2px;
+  padding: 0 9px 0 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.relativeBook ul li .priceWrap {
+  overflow: hidden;
+  padding: 0 6px 0 12px;
+  line-height: 18px;
+  margin-top: 4.2px;
+}
+.relativeBook ul li .priceWrap .price {
+  float: left;
+  color: #e60000;
+  font-size: 14.4px;
+}
+.relativeBook ul li .priceWrap .original {
+  float: left;
+  color: #999999;
+  font-size: 13.2px;
+  margin-left: 7.2px;
+  text-decoration: line-through;
+}
+.relativeBook ul li .priceWrap .discount {
+  float: right;
+  color: #fff;
+  font-size: 10.8px;
+  background: #efb64d;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 1.8px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 52.8px;
+  box-shadow: -1px -1px 10px #d8d8d8;
+  z-index: 900;
+  background: #fff;
+  width: 100%;
+}
+.footer .footerInner {
+  position: relative;
+  padding-left: 196.8px;
+  font-size: 12px;
+  background: #fff;
+}
+.footer .btn_bar {
+  position: absolute;
+  width: 196.8px;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+.footer .btn_bar .iconBtn {
+  width: 33.33333%;
+  height: 52.8px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+.footer .btn_bar .iconBtn .iconBtnInner {
+  border-right: 2px solid #f3f3f3;
+  height: 52.8px;
+  overflow: hidden;
+  position: relative;
+}
+.footer .btn_bar .iconBtn .iconBtnInner .add_num {
+  position: absolute;
+  font-size: 12px;
+  text-align: center;
+  min-width: 15px;
+  height: 15px;
+  line-height: 15px;
+  color: #fff;
+  border-radius: 12px;
+  background: #e60000;
+  left: 50%;
+  top: 6px;
+}
+.footer .btn_bar .iconBtn .icon {
+  height: 21.6px;
+  width: 21.6px;
+  margin: 7.2px auto 3.6px;
+  display: block;
+}
+.footer .btn_bar #customerService .icon {
+  background: url('http://o.bookschina.com/images/wap/cumthor.png') no-repeat center;
+  background-size: cover;
+}
+.footer .btn_bar #collection .icon {
+  background: url('http://o.bookschina.com/images/wap/nocollection.png') no-repeat center;
+  background-size: cover;
+}
+.footer .btn_bar #collection.collected .icon {
+  background-image: url('http://o.bookschina.com/images/wap/collection.png');
+  background-size: cover;
+}
+.footer .btn_bar #gotoCart .icon {
+  background: url('http://o.bookschina.com/images/wap/gotocar.png') no-repeat center;
+  background-size: cover;
+}
+.footer .btn_bar .iconBtn .txt {
+  text-align: center;
+  color: #666666;
+  font-size: 13.2px;
+  margin-top: 6px;
+}
+.footer .btn_group {
+  width: 100%;
+  height: 52.8px;
+  line-height: 52.8px;
+  text-align: center;
+}
+.footer .btn_group .btn_red {
+  background: #e60000;
+}
+.footer .btn_group .btn_gray {
+  background: #999999;
+}
+.footer .btn_group span {
+  font-size: 18px;
+  color: #fff;
+}
+.otherBuy {
+  overflow: hidden;
+}
+.otherBuy .tit {
+  padding: 0 12px;
+  height: 40.8px;
+  line-height: 40.8px;
+  font-size: 15.6px;
+  color: #333333;
+  background: #f3f3f3;
+}
+#otherBuyBook {
+  position: relative;
+  z-index: 1;
+  height: 219.6px;
+  width: 100%;
+  overflow: hidden;
+  -ms-touch-action: none;
+}
+#scroller {
+  position: absolute;
+  z-index: 1;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  height: 160px;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  text-size-adjust: none;
+}
+.otherBuy ul {
+  padding: 0 0 0 12px;
+  overflow: hidden;
+}
+.otherBuy ul li {
+  float: left;
+  width: 144px;
+  padding-bottom: 10.2px;
+  margin-right: 22.8px;
+}
+.otherBuy ul li a {
+  display: block;
+}
+.otherBuy ul li .cover {
+  text-align: center;
+  border: 1px solid #fdf1f1;
+  width: 121.2px;
+  margin: auto;
+  margin: 18px 0 0 0;
+}
+.otherBuy ul li .cover img {
+  max-width: 100%;
+  height: 120px;
+}
+.otherBuy ul li .name {
+  color: #000;
+  font-size: 13.2px;
+  line-height: 18px;
+  margin-top: 7.2px;
+  height: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.otherBuy ul li .author {
+  color: #666666;
+  font-size: 12px;
+  line-height: 18px;
+  height: 18px;
+  margin-top: 4.8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.otherBuy ul li .priceWrap {
+  overflow: hidden;
+  line-height: 18px;
+  margin-top: 4.2px;
+}
+.otherBuy ul li .priceWrap .price {
+  float: left;
+  color: #e60000;
+  font-size: 14.4px;
+}
+.otherBuy ul li .priceWrap .original {
+  float: left;
+  color: #999999;
+  font-size: 13.2px;
+  margin-left: 8.4px;
+  text-decoration: line-through;
+}
+/*评论弹层*/
+.commentLayer {
+  background: #f3f3f3;
+}
+.commentLayer .layerHead {
+  height: 52.8px;
+  box-shadow: 0px 0px 10px #d4d2d3;
+  line-height: 52.8px;
+  background: #fff;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 900;
+}
+.commentLayer .layerHead .layerHeadInner {
+  position: relative;
+  height: 52.8px;
+}
+.commentLayer .layerHead b {
+  font-size: 16.8px;
+  display: block;
+}
+.commentLayer .layerHead a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 52.8px;
+  width: 24px;
+  background: url('http://o.bookschina.com/images/wap/returnbtnicon.png') no-repeat center;
+  background-size: 12px 21px;
+}
+.commondloading {
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  background: #f3f3f3;
+}
+.commondloading span {
+  font-size: 14.4px;
+  color: #666666;
+  display: block;
+}
+.commentLayer .layerContent {
+  background: #fff;
+  margin-top: 9.6px;
+}
+.commentLayer .layerContentTit {
+  box-shadow: 0px 1px 10px #dddcdd;
+  position: relative;
+  height: 40.8px;
+  line-height: 40.8px;
+}
+.commentLayer .layerContentTit span {
+  display: block;
+  font-size: 15.6px;
+  color: #333333;
+  padding-left: 12px;
+}
+.commentLayer .layerContentTit span b {
+  color: #e60000;
+}
+.commentLayer .layerContentTit a {
+  position: absolute;
+  height: 40.8px;
+  width: 100%;
+  color: #e60000;
+  font-size: 12px;
+  top: 0;
+  left: 0;
+  text-align: right;
+  padding-right: 10.2px;
+}
+.commentLayer .commentContent {
+  padding: 0 12px;
+}
+.commentLayer .commentContent .commentItem {
+  border-bottom: 2px solid #f3f3f3;
+  padding: 12px 0 3px;
+}
+.commentLayer .commentContent .commentItem .ItemTit {
+  overflow: hidden;
+  margin-top: 15px;
+}
+.commentLayer .commentContent .commentItem .userInfor {
+  float: left;
+  overflow: hidden;
+  line-height: 18px;
+}
+.commentLayer .commentContent .commentItem .userInfor .userName {
+  float: left;
+  font-size: 12px;
+  color: #666666;
+}
+.commentLayer .commentContent .commentItem .userInfor .userLeave {
+  float: left;
+  font-size: 12px;
+  color: #e60000;
+  margin-left: 6px;
+}
+.commentLayer .commentContent .commentItem .startWrap {
+  overflow: hidden;
+  line-height: 12px;
+  margin-top: 3px;
+  float: right;
+}
+.commentLayer .commentContent .commentItem .startWrap span {
+  float: left;
+  height: 12px;
+  width: 12px;
+  margin: 0 0 0 3px;
+}
+.commentLayer .commentContent .commentItem .startWrap span.full {
+  background-image: url('http://o.bookschina.com/images/wap/full.png');
+  background-size: 12px 12px;
+}
+.commentLayer .commentContent .commentItem .startWrap span.half {
+  background-image: url('http://o.bookschina.com/images/wap/halfstart.png');
+  background-size: 12px 12px;
+}
+.commentLayer .commentContent .commentItem .startWrap span.empty {
+  background-image: url('http://o.bookschina.com/images/wap/empty.png');
+  background-size: 12px 12px;
+}
+.commentLayer .commentContent .commentItem .userComment p {
+  line-height: 20.4px;
+  color: #333333;
+  font-size: 13.2px;
+  overflow: hidden;
+}
+.commentLayer .commentContent .commentItem .userComment b {
+  font-weight: bold;
+  font-size: 14.4px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 4.8px 90px 4.8px 0;
+}
+.commentLayer .commentFoot {
+  overflow: hidden;
+  line-height: 19.2px;
+  margin-top: 12px;
+  padding-bottom: 6px;
+}
+.commentLayer .commentFoot .commentTime {
+  float: left;
+}
+.commentLayer .commentFoot .commentTime span {
+  display: block;
+  color: #666666;
+  font-size: 10.8px;
+}
+.commentLayer .commentFoot .commentOparate {
+  float: right;
+  overflow: hidden;
+}
+.commentLayer .commentFoot .commentOparate span {
+  cursor: pointer;
+  float: left;
+  color: #999999;
+  font-size: 13.2px;
+  width: 39px;
+  padding-left: 20.4px;
+}
+.commentLayer .commentFoot .commentOparate span.supportBtn {
+  background: url('http://o.bookschina.com/images/wap/supportBtn.png') no-repeat left;
+  background-size: 13.2px;
+}
+.commentLayer .commentFoot .commentOparate span.oppositionBtn {
+  background: url('http://o.bookschina.com/images/wap/oppositionBtn.png') no-repeat left;
+  background-size: 13.2px;
+}
+.commentLayer .commentFoot .commentOparate span.supportBtn.cur {
+  background: url('http://o.bookschina.com/images/wap/cursupportBtn.png') no-repeat left;
+  background-size: 13.2px;
+}
+.commentLayer .commentFoot .commentOparate span.oppositionBtn.cur {
+  background: url('http://o.bookschina.com/images/wap/curoppositionBtn.png') no-repeat left;
+  background-size: 13.2px;
+}
+.commentLayer .ztReply {
+  overflow: hidden;
+  line-height: 20.4px;
+  padding-bottom: 6px;
+}
+.commentLayer .ztReply p {
+  color: #666666;
+  font-size: 12px;
+}
+/*加入购物车特此奥*/
+.u-flyer {
+  width: 60px;
+}
+/*活动banner*/
+.bannerbg {
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 9.6px;
+}
+.bannerbg a {
+  display: block;
+}
+.bannerbg img {
+  width: 100%;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  height: 0px;
+  bottom: 99px !important;
+  right: 0;
+  width: auto !important;
+  margin: 0 auto;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 85px 4px 0px !important;
+}

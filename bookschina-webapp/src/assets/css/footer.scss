@@ -1,0 +1,31 @@
+/*网站底部*/
+.footer{
+    height: 52.8px;
+}
+
+.van-tabbar {
+    background: #fff;
+    box-shadow: 0px 0px 5px #8e8e8e;
+    z-index   : 100 !important;
+}
+
+.van-tabbar-item {
+    float     : left;
+    width     : 20%;
+    text-align: center;
+    height    : 0.88*60px;
+}
+
+.van-tabbar-item .van-tabbar-item__icon img {
+    width     : 0.38*60px;
+    margin    : auto;
+    display   : block;
+    margin-top: 0.1*60px;
+    height    : 0.38*60px;
+}
+
+.van-tabbar-item__text span{
+    display    : block;
+    text-align : center;
+    line-height: 0.3*60px;
+}

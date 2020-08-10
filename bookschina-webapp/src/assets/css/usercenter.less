@@ -1,0 +1,537 @@
+/*我的中图*/
+.myHead {
+    background: #e60000;
+    padding   : 1.2*60px 0.2*60px 0.15*60px;
+    position  : relative;
+}
+
+.myHead .userInfor {
+    background: #fff;
+    text-align: center;
+    position  : relative;
+    border-top: 1px solid #fff;
+}
+
+.myHead .userInfor .headPortrait {
+    position       : absolute;
+    height         : 1.2*60px;
+    width          : 1.2*60px;
+    left           : 50%;
+    top            : -0.6*60px;
+    background     : url('../../assets/images/usercenter/headportraitbg.png') no-repeat center;
+    background-size: cover;
+    padding        : 0.1*60px;
+    margin-left    : -0.6*60px;
+
+}
+
+.myHead .userInfor .headPortrait a {
+    display: block;
+}
+
+.myHead .userInfor .headPortrait img {
+    height: 75px;
+    width        : 100%;
+    border-radius: 100%;
+}
+
+.myHead .userInfor .userName {
+    font-size  : 0.24*60px;
+    font-weight: bold;
+    line-height: 0.3*60px;
+    color      : #333333;
+    margin-top : 0.74*60px;
+}
+
+.myHead .userInfor .userName a {
+    display        : inline-block;
+    height         : 0.3*60px;
+    width          : 0.3*60px;
+    background     : url('../../assets/images/usercenter/inforedit.png') no-repeat center 0.05*60px;
+    background-size: 0.26*60px 0.25*60px;
+    margin         : 0 0 0 0.07*60px;
+}
+
+/*.userLeave i{display:inline-block;border-left:1px solid #dddddd; height:*60px; width:.02*60px;}*/
+.myHead .userLeave {
+    font-size    : 0.22*60px;
+    /*line-height:0.32*60px;*/
+    padding      : 0.28*60px 0 0.2*60px;
+}
+
+.myHead .userLeave.nomargin {
+    padding-top: 0*60px;
+    font-family: Microsoft Yahei;
+    font-size  : .18*60px;
+    color      : #666;
+}
+
+.myHead .userLeave .startLeave {
+    color      : #ec1b08;
+    font-family: Microsoft Yahei, Helvetica, Arial;
+}
+
+.myHead .userLeave .startLeave i {
+    color       : #fff;
+    width       : .28*60px;
+    font-size   : .18*60px;
+    line-height : .37*60px;
+    height      : 0.32*60px;
+    display     : inline-block;
+    margin-right: .05*60px
+}
+
+.myHead .userLeave .startLeave i.star1 {
+    background     : url(../../assets/images/usercenter/star1.png) no-repeat left center;
+    background-size: 0.28*60px 0.24*60px;
+}
+
+.myHead .userLeave .startLeave i.star2 {
+    background     : url(http://o.bookschina.com/images/wap/star2.png) no-repeat left center;
+    background-size: 0.28*60px 0.24*60px;
+}
+
+.myHead .userLeave .startLeave i.star3 {
+    background     : url(http://o.bookschina.com/images/wap/star3.png) no-repeat left center;
+    background-size: 0.28*60px 0.24*60px;
+}
+
+.myHead .userLeave .integralNum {
+    font-family : Microsoft Yahei, Helvetica, Arial;
+    color       : #333;
+    border-left : 1px solid #bfbfbf;
+    padding-left: 0.18*60px;
+    margin-left : 0.18*60px;
+}
+
+.myHead .userLeave .integralNum span {
+    font-family: Arial;
+    color      : #ec1b08;
+}
+
+.myHead .signIn {
+    position       : absolute;
+    width          : 0.4*60px;
+    height         : 0.4*60px;
+    background     : url('http://o.bookschina.com/images/wap/signIn2.png') no-repeat center;
+    background-size: 0.35*60px;
+    left           : 0.16*60px;
+    top            : 0.07*60px;
+    display        : none;
+}
+
+.myHead .signIn a {
+    height : 0.4*60px;
+    display: none;
+}
+
+.myHead .setUp {
+    position       : absolute;
+    width          : 0.4*60px;
+    height         : 0.4*60px;
+    background     : url('../../assets/images/usercenter/setUp.png') no-repeat center;
+    background-size: 0.36*60px 0.34*60px;
+    right          : 0.18*60px;
+    top            : 0.1*60px;
+}
+
+.myHead .setUp a {
+    display: block;
+    height : 0.4*60px;
+}
+
+.orderBar {
+    padding   : 0 0.2*60px;
+    background: #fff;
+    margin-top: 0.1*60px;
+}
+
+.orderBar .orderTit {
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.orderBar .orderTit a {
+    display    : block;
+    height     : 0.86*60px;
+    overflow   : hidden;
+    line-height: 0.86*60px;
+}
+
+.orderBar .orderTit b {
+    float    : left;
+    color    : #333333;
+    font-size: 0.28*60px;
+}
+
+.orderBar .orderTit span {
+    float          : right;
+    color          : #333;
+    background     : url('../../assets/images/usercenter/accountrightbtn.png') no-repeat right center;
+    background-size: 0.08*60px 0.15*60px;
+    padding-right  : 0.18*60px;
+    font-size      : 0.22*60px;
+}
+
+.orderCon {
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.orderCon ul {
+    overflow: hidden;
+}
+
+.orderCon ul li {
+    float      : left;
+    width      : 25%;
+    text-align : center;
+    overflow   : hidden;
+    line-height: 0;
+}
+
+.orderCon ul li a {
+    display: block;
+}
+
+.orderCon ul li i {
+    display   : inline-block;
+    height    : 0.4*60px;
+    width     : 0.4*60px;
+    position  : relative;
+    margin-top: 0.3*60px;
+}
+
+.orderCon ul li i img {
+    display: block;
+    width  : 100%;
+}
+
+.orderCon ul li i span {
+    font-size    : 0.16*60px;
+    position     : absolute;
+    background   : #e60000;
+    color        : #fff;
+    height       : 0.25*60px;
+    min-width    : 0.25*60px;
+    text-align   : center;
+    line-height  : 0.25*60px;
+    border-radius: 0.25*60px;
+    padding      : 0 0.05*60px;
+    top          : -0.125*60px;
+    left         : 0.3*60px;
+}
+
+.orderCon ul li b {
+    font-size     : 0.22*60px;
+    color         : #333;
+    display       : block;
+    line-height   : 0.32*60px;
+    margin-top    : 0.25*60px;
+    padding-bottom: 0.25*60px;
+}
+
+/*用户资产*/
+.assetsBar {
+    padding   : 0 0.2*60px;
+    background: #fff;
+}
+
+.assetsBar ul {
+    overflow: hidden;
+}
+
+.assetsBar ul li {
+    float     : left;
+    width     : 25%;
+    text-align: center;
+}
+
+.assetsBar ul li a {
+    display : block;
+    overflow: hidden;
+    padding : 0.26*60px 0;
+}
+
+.assetsBar ul li span {
+    color      : #e60000;
+    font-size  : 0.24*60px;
+    font-weight: bold;
+    display    : block;
+    line-height: 0.34*60px;
+}
+
+.assetsBar ul li b {
+    color      : #333333;
+    font-size  : 0.22*60px;
+    display    : block;
+    line-height: 0.32*60px;
+    margin-top : 0.17*60px;
+}
+
+/*用户快捷方式*/
+
+.shortcut {
+    padding   : 0 0.2*60px;
+    background: #fff;
+    margin-top: 0.1*60px;
+}
+
+.shortcut ul {
+    overflow: hidden;
+}
+
+.shortcut ul li {
+    float        : left;
+    width        : 25%;
+    border-bottom: 1px solid #f3f3f3;
+    border-right : 1px solid #f3f3f3;
+    text-align   : center;
+}
+
+.shortcut ul li a {
+    display    : block;
+    overflow   : hidden;
+    line-height: 0;
+}
+
+.shortcut ul li i {
+    display   : inline-block;
+    height    : 0.4*60px;
+    width     : 0.4*60px;
+    margin-top: 0.5*60px;
+}
+
+.shortcut ul li i img {
+    width  : 100%;
+    display: block;
+}
+
+.shortcut ul li b {
+    display       : block;
+    color         : #000334;
+    font-size     : 0.22*60px;
+    line-height   : 0.32*60px;
+    margin-top    : 0.25*60px;
+    padding-bottom: 0.25*60px;
+}
+
+/*为你推荐*/
+
+.recommendWrap {
+    margin-top: 0.1*60px;
+
+}
+
+.recommendWrap .recomandTit {
+    position   : relative;
+    z-index    : 2;
+    box-shadow : 1px 0px 3px #dddcdd;
+    text-align : center;
+    background : #fff;
+    line-height: 0;
+    height     : 0.68*60px;
+    overflow   : hidden;
+}
+
+.recommendWrap .recomandTit img {
+    height : 0.68*60px;
+    display: block;
+    margin : auto;
+}
+
+.recomandCon {
+    background: #fff;
+    position  : relative;
+    z-index   : 1;
+}
+
+.recomandCon ul {
+    overflow: hidden;
+}
+
+.recomandCon ul li {
+    float        : left;
+    width        : 50%;
+    background   : #fff;
+    border-bottom: 2px solid #f3f3f3;
+    border-right : 2px solid #f3f3f3;
+}
+
+.recomandCon ul li a {
+    display: block;
+}
+
+.recomandCon ul li .cover {
+    padding   : 0.17*60px 0.15*60px 0.1*60px;
+    text-align: center;
+}
+
+.recomandCon ul li .cover img {
+    height   : 2*60px;
+    max-width: 100%;
+    font-size: 12px;
+}
+
+.recomandCon ul li .name {
+    padding    : 0 0.15*60px;
+    font-size  : 0.22*60px;
+    line-height: 0.3*60px;
+    height     : 0.6*60px;
+    color      : #000000;
+    overflow   : hidden;
+}
+
+.recomandCon ul li .priceWrap {
+    overflow   : hidden;
+    line-height: 0.34*60px;
+    padding    : 0.05*60px 0.15*60px 0.15*60px;
+}
+
+.recomandCon ul li .priceWrap span {
+    float      : left;
+    color      : #e60000;
+    font-size  : 0.24*60px;
+    font-weight: bold;
+}
+
+.recomandCon ul li .priceWrap del {
+    float      : left;
+    font-size  : 0.2*60px;
+    color      : #999999;
+    margin-left: 0.17*60px;
+}
+
+/*退出登录*/
+.signOut {
+    height     : 0.82*60px;
+    line-height: 0.82*60px;
+}
+
+.signOut a {
+    display   : block;
+    font-size : 0.24*60px;
+    color     : #333333;
+    text-align: center;
+}
+
+/*网站底部*/
+.webNav {
+    position  : fixed;
+    width     : 100%;
+    left      : 0;
+    bottom    : 0;
+    background: #fff;
+    box-shadow: 0px 0px 5px #8e8e8e;
+    z-index   : 10;
+}
+
+.webNav ul {
+    overflow: hidden;
+}
+
+.webNav ul li {
+    float     : left;
+    width     : 20%;
+    text-align: center;
+    height    : 0.88*60px;
+}
+
+.webNav ul li a {
+    color    : #333333;
+    font-size: 0.22*60px;
+    display  : block;
+    height   : 0.88*60px;
+}
+
+.webNav ul li.cur a {
+    color: #e60000;
+}
+
+.webNav ul li a img {
+    width     : 0.36*60px;
+    margin    : auto;
+    display   : block;
+    margin-top: 0.13*60px;
+    height    : 0.36*60px;
+}
+
+.webNav ul li a b {
+    display    : block;
+    text-align : center;
+    line-height: 0.5*60px;
+}
+
+
+
+.kindNavWrap {
+    position: relative;
+    z-index : 19;
+}
+
+.kindNavFixed.fixed {
+    position: fixed;
+    left    : 0;
+    top     : 0;
+    width   : 100%;
+}
+
+.kindNavRelative {
+    position  : relative;
+    background: #fff;
+}
+
+.kindNav {
+    position: relative;
+
+
+}
+
+.kindNav ul {
+    overflow: hidden;
+    padding : 0 0.2*60px;
+}
+
+.kindNav ul li {
+    float        : left;
+    width        : 33.33333333%;
+    text-align   : center;
+    margin       : 0.16*60px 0 0;
+    height       : 0.68*60px;
+    border       : 0.02*60px solid #fff;
+    border-bottom: none;
+    border-radius: 0.15*60px 0.15*60px 0 0;
+    cursor       : pointer;
+
+}
+
+.kindNav ul li.cur {
+    border       : 0.02*60px solid #f3f3f3;
+    border-bottom: none;
+    background   : #fff;
+}
+
+.kindNav ul li.tejia.cur {
+    border       : 0.02*60px solid #fff;
+    border-bottom: none;
+    background   : none;
+}
+
+.kindNav ul li span {
+    display      : block;
+    margin       : 0 0.15*60px;
+    height       : 0.52*60px;
+    border-radius: 0.52*60px;
+    line-height  : 0.52*60px;
+    color        : #333333;
+    background   : #f3f3f3;
+    font-size    : 0.22*60px;
+}
+
+.kindNav ul li.cur span {
+    background: #fff;
+    color     : #dc2230;
+}
+
+.kindNav ul li.tejia.cur span {
+    color     : #dc2230;
+    background: #f3f3f3;
+}

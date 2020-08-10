@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*网站底部*/
+.footer {
+  height: 52.8px;
+}
+
+.van-tabbar {
+  background: #fff;
+  box-shadow: 0px 0px 5px #8e8e8e;
+  z-index: 100 !important;
+}
+
+.van-tabbar-item {
+  float: left;
+  width: 20%;
+  text-align: center;
+  height: 52.8px;
+}
+
+.van-tabbar-item .van-tabbar-item__icon img {
+  width: 22.8px;
+  margin: auto;
+  display: block;
+  margin-top: 6px;
+  height: 22.8px;
+}
+
+.van-tabbar-item__text span {
+  display: block;
+  text-align: center;
+  line-height: 18px;
+}

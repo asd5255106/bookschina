@@ -1,0 +1,1032 @@
+/* 商品列表css样式 */
+.pageWrap {
+    margin-top: 55px;
+}
+
+.pageWrap .content {
+    margin-top: 0px;
+}
+
+/* 组件css */
+.van-tab {
+    flex-basis: 15%;
+}
+
+/* 进程 */
+.crumb {
+    position  : relative;
+    z-index   : 900;
+    background: #fff;
+    overflow  : hidden;
+}
+
+.crumbTit {
+    overflow   : hidden;
+    padding    : 0.2*60px;
+    line-height: 0.32*60px;
+}
+
+.crumbTit a {
+    color    : #333333;
+    font-size: 0.22*60px;
+    float    : left;
+}
+
+.crumbTit span {
+    color    : #666666;
+    font-size: 0.22*60px;
+    float    : left;
+    margin   : 0 0.2*60px;
+}
+
+.crumbList {
+    padding   : 0 0.2*60px;
+    margin-top: 0.14*60px;
+    position  : relative;
+    max-height: 1.32*60px;
+    overflow  : hidden;
+}
+
+.crumbList ul {
+    overflow: hidden;
+}
+
+.crumbList ul li {
+    float       : left;
+    margin-right: 0.3*60px;
+    line-height : 0.66*60px;
+}
+
+.crumbList ul li a {
+    font-size: 0.22*60px;
+    color    : #666666;
+    display  : block;
+}
+
+.crumbList ul li.cur a {
+    color: #e60000;
+}
+
+.crumbList .switch {
+    position       : absolute;
+    font-size      : 0.22*60px;
+    color          : #e60000;
+    right          : 0.2*60px;
+    bottom         : 0.22*60px;
+    background     : url('http://o.bookschina.com/images/wap/redarrowdown.png') no-repeat right center;
+    background-size: 0.15*60px 0.08*60px;
+    padding-right  : 0.28*60px;
+}
+
+.crumbList .switch.open {
+    background     : url('http://o.bookschina.com/images/wap/redarrowup.png') no-repeat right center;
+    background-size: 0.15*60px 0.08*60px;
+}
+
+.dropItem {
+    display: none;
+}
+
+.kindNavWrap {
+    position: relative;
+    z-index : 99;
+    position: sticky;
+    top     : 0;
+}
+
+.kindNavFixed.fixed {
+    position: fixed;
+    left    : 0;
+    top     : 0;
+    width   : 100%;
+}
+
+.kindNavRelative {
+    position  : relative;
+    background: #fff;
+}
+
+.kindNav {
+    position: relative;
+    z-index : 100;
+
+}
+
+.kindNav ul {
+    overflow: hidden;
+    padding : 0 0.2*60px;
+}
+
+.kindNav ul li {
+    float        : left;
+    width        : 32.5%;
+    text-align   : center;
+    margin       : 0.16*60px 0 0;
+    height       : 0.68*60px;
+    border       : 0.02*60px solid #fff;
+    border-bottom: none;
+    border-radius: 0.15*60px 0.15*60px 0 0;
+    cursor       : pointer;
+
+}
+
+.kindNav ul li.open {
+    border       : 0.02*60px solid #f3f3f3;
+    border-bottom: none;
+    background   : #fff;
+}
+
+.kindNav ul li.tejia.cur {
+    border       : 0.02*60px solid #fff;
+    border-bottom: none;
+    background   : none;
+}
+
+.kindNav ul li span {
+    display      : block;
+    margin       : 0 0.15*60px;
+    height       : 0.52*60px;
+    border-radius: 0.52*60px;
+    line-height  : 0.52*60px;
+    color        : #333333;
+    background   : #f3f3f3;
+    font-size    : 0.22*60px;
+}
+
+.kindNav ul li.open span {
+    background: #fff;
+    color     : #dc2230;
+}
+
+.kindNav ul li.tejia.cur span {
+    color     : #dc2230;
+    background: #f3f3f3;
+}
+
+.kindNav ul li.cur span {
+    color: #dc2230;
+}
+
+.dropWrap {
+    border-top: 0.02*60px solid #f3f3f3;
+    position  : absolute;
+    width     : 100%;
+    left      : 0;
+    top       : 0.82*60px;
+    z-index   : 99;
+    background: #fff;
+    font-size : 12px;
+}
+
+.hotNavFixed.fixed {
+    position  : fixed;
+    top       : 0;
+    left      : 0;
+    width     : 100%;
+    z-index   : 120;
+    background: #fff;
+}
+
+#priceWrap {
+    padding: 0 0.2*60px;
+}
+
+#priceWrap dl {
+    overflow: hidden;
+}
+
+#priceWrap dl dt {
+    color      : #333333;
+    font-size  : 0.22*60px;
+    line-height: 0.32*60px;
+    margin-top : 0.18*60px;
+}
+
+#priceWrap dl dd {
+    margin-top: 0.18*60px;
+}
+
+#priceWrap dl dd ul {
+    overflow: hidden;
+}
+
+#priceWrap dl dd ul li {
+    float      : left;
+    color      : #666666;
+    width      : 33.333%;
+    line-height: 0.66*60px;
+}
+
+#priceWrap dl dd ul li.cur {
+    color: #e60000;
+}
+
+.price_area {
+    overflow      : hidden;
+    padding-bottom: 0.4*60px;
+}
+
+.price_area input {
+    width        : 1.7*60px;
+    height       : 0.44*60px;
+    border       : none;
+    background   : #f3f3f3;
+    color        : #333333;
+    text-align   : center;
+    border-radius: 0.05*60px;
+    float        : left;
+}
+
+.price_area .area_hyphen {
+    float          : left;
+    background     : url('http://o.bookschina.com/images/wap/areahyphen.png') no-repeat center;
+    background-size: 0.35*60px 0.02*60px;
+    width          : 0.75*60px;
+    height         : 0.44*60px;
+}
+
+.price_area .areaButton {
+    float        : left;
+    height       : 0.44*60px;
+    width        : 0.8*60px;
+    text-align   : center;
+    border-radius: 0.05*60px;
+    color        : #fff;
+    background   : #e60000;
+    font-size    : 0.22*60px;
+    line-height  : 0.44*60px;
+    margin-left  : 0.5*60px;
+
+}
+
+#discountSelcet {
+    padding: 0 0.2*60px;
+}
+
+#discountSelcet dl {
+    overflow: hidden;
+}
+
+#priceWrap dl dt {
+    color      : #333333;
+    font-size  : 0.22*60px;
+    line-height: 0.32*60px;
+    margin-top : 0.18*60px;
+}
+
+#discountSelcet dl dd {
+    margin-top: 0.18*60px;
+}
+
+#priceWrap dl dd ul {
+    overflow: hidden;
+}
+
+#discountSelcet dl dd ul li {
+    float      : left;
+    color      : #666666;
+    width      : 33.333%;
+    line-height: 0.66*60px;
+}
+
+#discountSelcet dl dd ul li.cur {
+    color: #e60000;
+}
+
+.nav {
+    background   : #fff;
+    border-bottom: 0.02*60px solid #f3f3f3;
+    border-top   : 0.02*60px solid #f3f3f3;
+    position     : relative;
+    z-index      : 900;
+    overflow     : hidden;
+    height       : 0.8*60px;
+}
+
+.navFixed {
+    position                  : absolute;
+    background                : #f3f3f3;
+    box-shadow                : 0px 0px 10px #d4d2d3;
+    z-index                   : 900;
+    width                     : 100%;
+    left                      : 0;
+    top                       : 0;
+    width                     : 579px;
+    transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);
+    transition-duration       : 0ms;
+    transform                 : translate(0px, 0px) translateZ(0px);
+}
+
+.nav ul {
+    overflow  : hidden;
+    background: #fff;
+    padding   : 0.16*60px 0 0.1*60px;
+}
+
+.nav ul li {
+    float     : left;
+    width     : 13%;
+    text-align: center;
+    font-size : 12px;
+}
+
+.nav ul li a {
+    color       : #333333;
+    display     : block;
+    border-right: 0.02*60px solid #f3f3f3;
+    height      : 0.46*60px;
+    line-height : 0.46*60px;
+    font-size   : 0.22*60px;
+}
+
+.nav ul li:last-child a {
+    border-right: none;
+}
+
+.nav ul li span {
+    width   : 0.17*60px;
+    height  : 0.10*60px;
+    display : inline-block;
+    position: relative;
+}
+
+.nav ul li .arrow_down {
+    background     : url('../../assets/images/goodslist/greyarrowdown.png') no-repeat center;
+    background-size: 0.15*60px 0.08*60px;
+    left           : -0.08*60px;
+    top            : 0.04*60px;
+}
+
+.nav ul li .arrow_up {
+    left           : 0.09*60px;
+    top            : -0.09*60px;
+    background     : url('http://o.bookschina.com/images/wap/greyarrowup.png') no-repeat center;
+    background-size: 0.15*60px 0.08*60px;
+}
+
+// .nav ul li .arrow_down {
+//     left: 0.09*60px;
+//     top : -0.04*60px;
+// }
+
+.nav ul li.current a {
+    color: #e60000;
+}
+
+.nav ul li.current .arrow_down.cur {
+    left: 0.09*60px;
+    top : -0.04*60px;
+}
+
+.nav ul li.current .arrow_down.cur {
+    background     : url('../../assets/images/goodslist/redarrwodown.png') no-repeat center;
+    background-size: 0.15*60px 0.08*60px;
+    left           : -0.08*60px;
+    top            : 0.04*60px;
+}
+
+.nav ul li.current .arrow_up.cur {
+    background     : url('http://o.bookschina.com/images/wap/redarrowup.png') no-repeat center;
+    background-size: 0.15*60px 0.08*60px;
+    left           : 0.09*60px;
+    top            : -0.09*60px;
+}
+
+/*列表css*/
+.booklist {
+    background: #fff;
+}
+
+.booklist ul li {
+    position: relative;
+}
+
+.booklist ul li a {
+    display: block;
+    padding: 0.22*60px 0.2*60px 0.3*60px;
+}
+
+.booklist ul li .bookWrap {
+    border-bottom : 0.02*60px solid #f3f3f3;
+    position      : relative;
+    padding-left  : 2.2*60px;
+    min-height    : 2.08*60px;
+    padding-bottom: 0.55*60px;
+}
+
+.booklist ul li:last-child .bookWrap {
+    border-bottom: none;
+}
+
+.booklist ul li .bookWrap .cover {
+    position  : absolute;
+    height    : 2*60px;
+    width     : 2*60px;
+    left      : 0;
+    top       : 0.08*60px;
+    outline   : 0.02*60px solid #fdeeee;
+    text-align: center;
+}
+
+.booklist ul li .bookWrap .cover img {
+    height   : 2*60px;
+    max-width: 100%;
+}
+
+.booklist ul li .infor {
+    min-height: 2*60px;
+}
+
+.booklist ul li .bookName {
+    font-size         : 0.24*60px;
+    color             : #000000;
+    line-height       : 0.34*60px;
+    overflow          : hidden;
+    text-overflow     : ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+}
+
+.booklist ul li .bookName b {
+    display: block
+}
+
+.booklist ul li .authorPublisher {
+    font-size    : 0.2*60px;
+    line-height  : 0.3*60px;
+    margin-top   : 0.05*60px;
+    color        : #666666;
+    overflow     : hidden;
+    white-space  : nowrap;
+    text-overflow: ellipsis;
+}
+
+.booklist ul li .startWrap {
+    overflow   : hidden;
+    line-height: 0.2*60px;
+    margin-top : 0.13*60px;
+}
+
+.booklist ul li .startWrap span {
+    float : left;
+    height: 0.2*60px;
+    width : 0.2*60px;
+    margin: 0 0.05*60px 0 0;
+}
+
+.booklist ul li .startWrap span.full {
+    background-image: url('../../assets/images/goodslist/full.png');
+    background-size : 0.2*60px 0.2*60px;
+}
+
+.booklist ul li .startWrap span.half {
+    background-image: url('../../assets/images/goodslist/halfstart.png');
+    background-size : 0.2*60px 0.2*60px;
+}
+
+.booklist ul li .startWrap span.empty {
+    background-image: url('http://o.bookschina.com/images/wap/empty.png');
+    background-size : 0.2*60px 0.2*60px;
+}
+
+.booklist ul li .startWrap b {
+    float      : left;
+    font-size  : 0.2*60px;
+    margin-left: 0.1*60px;
+    color      : #ff511c;
+}
+
+.booklist ul li .activeList {
+    overflow: hidden;
+    padding : 0;
+}
+
+.booklist ul li .activeList span {
+    float        : left;
+    color        : #e60000;
+    font-size    : 0.2*60px;
+    border       : 0.02*60px solid #e60000;
+    border-radius: 0.05*60px;
+    overflow     : hidden;
+    height       : 0.44*60px;
+    padding      : 0 0.1*60px;
+    margin-right : 0.2*60px;
+    line-height  : 0.4*60px;
+    margin-top   : 0.16*60px;
+}
+
+.booklist ul li .priceWrap {
+    overflow   : hidden;
+    color      : #e60000;
+    line-height: 0.34*60px;
+    margin-top : 0.08*60px;
+}
+
+.booklist ul li .priceWrap span {
+    float    : left;
+    font-size: 0.2*60px;
+
+}
+
+.booklist ul li .priceWrap .sellPrice {
+    font-weight: bold;
+    color      : #e60000;
+    font-size  : 0.24*60px;
+}
+
+.booklist ul li .priceWrap .discount {
+    color      : #666;
+    font-size  : 0.2*60px;
+    margin-left: 0.15*60px;
+}
+
+.booklist ul li .priceWrap .price {
+    color      : #999;
+    font-size  : 0.2*60px;
+    margin-left: 0.15*60px;
+    margin-top : 0.02*60px;
+}
+
+.booklist ul li .operate {
+    position: absolute;
+    overflow: hidden;
+    right   : 0.2*60px;
+    bottom  : 0.6*60px;
+}
+
+.booklist ul li .operate .addCar {
+    float          : left;
+    height         : 0.36*60px;
+    width          : 0.36*60px;
+    cursor         : pointer;
+    background     : url('../../assets/images/goodslist/listcar.png') no-repeat center;
+    background-size: 0.3*60px;
+
+}
+
+.booklist ul li .operate .collect {
+    float          : left;
+    height         : 0.36*60px;
+    width          : 0.36*60px;
+    cursor         : pointer;
+    background     : url('../../assets/images/goodslist/listcollect.png') no-repeat center;
+    background-size: 0.3*60px 0.29*60px;
+    margin-left    : 0.3*60px;
+}
+
+.booklist ul li .operate .collect.collected {
+    background     : url('http://o.bookschina.com/images/wap/listcollectcur.png') no-repeat center;
+    background-size: 0.3*60px 0.29*60px;
+}
+
+
+
+
+/*弹窗*/
+
+.popMsg {
+    position  : fixed;
+    width     : 100%;
+    top       : 40%;
+    z-index   : 999;
+    text-align: center;
+}
+
+.popMsg span {
+    display      : inline-block;
+    font-size    : 0.24*60px;
+    background   : #000;
+    background   : rgba(0, 0, 0, 0.8);
+    color        : #fff;
+    padding      : 0.2*60px 0.17*60px;
+    border-radius: 0.05*60px;
+
+}
+
+.loading {
+    font-size      : 0.24*60px;
+    color          : #999999;
+    text-align     : center;
+    height         : 0.8*60px;
+    line-height    : 0.8*60px;
+    background     : #fff url(../../assets/images/goodslist/loading.gif) no-repeat center;
+    background-size: 1.81*60px 0.72*60px;
+    text-indent    : -9999px;
+    overflow       : hidden;
+}
+
+.loading.over {
+    text-indent: 0;
+    background : #fff;
+}
+
+
+/*搜索弹层*/
+
+#searchFloat_wrap {
+    background: #f3f3f3;
+    height    : 100%;
+    width     : 100%;
+    z-index   : 999;
+    display   : none;
+}
+
+.sf_header {
+    background: #fff;
+    height    : 0.88*60px;
+    box-shadow: 0px 1px 10px #cac8c9;
+}
+
+.sf_header .sf_inner {
+    padding : 0 0.82*60px 0 0.63*60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sf_header .sf_form {
+    height       : 0.6*60px;
+    margin-top   : 0.14*60px;
+    overflow     : hidden;
+    background   : #f3f3f3;
+    border-radius: 0.6*60px;
+    position     : relative;
+}
+
+.sf_header .sf_form .mix_submit {
+    cursor         : pointer;
+    position       : absolute;
+    border         : none;
+    height         : 0.6*60px;
+    width          : 0.55*60px;
+    left           : 0;
+    top            : 0;
+    margin         : 0;
+    padding        : 0;
+    background     : #f3f3f3 url('http://o.bookschina.com/images/wap/searchcircle.png') no-repeat center;
+    background-size: 0.25*60px 0.25*60px;
+
+}
+
+.sf_header .sf_form .keyword {
+    padding           : 0;
+    margin            : 0;
+    display           : block;
+    width             : 100%;
+    border            : none;
+    margin            : 0;
+    height            : 0.6*60px;
+    line-height       : 0.6*60px;
+    padding           : 0 0 0 0.55*60px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing   : border-box;
+    -ms-box-sizing    : border-box;
+    -o-box-sizing     : border-box;
+    box-sizing        : border-box;
+    color             : #333;
+    font-size         : 0.24*60px;
+    background        : #f3f3f3;
+}
+
+.sf_header .sf_back {
+    position: absolute;
+    width   : 0.6*60px;
+    left    : 0;
+    top     : 0;
+    height  : 0.88*60px;
+
+}
+
+.sf_header .sf_back a {
+    display        : block;
+    height         : 0.88*60px;
+    width          : 0.6*60px;
+    background     : url('http://o.bookschina.com/images/wap/returnbtnicon.png') no-repeat center;
+    background-size: 0.2*60px 0.35*60px;
+    text-indent    : -999px;
+    overflow       : hidden;
+}
+
+.sf_header .sf_btn {
+    position   : absolute;
+    right      : 0;
+    top        : 0;
+    width      : 0.82*60px;
+    line-height: 0.88*60px;
+    height     : 0.88*60px;
+    text-align : center;
+}
+
+.sf_header .sf_btn span {
+    font-size: 0.22*60px;
+    color    : #e60000;
+    display  : block;
+    height   : 0.88*60px;
+    cursor   : pointer;
+}
+
+/*相关搜索*/
+.relate_search {
+    display: none;
+}
+
+.relate_search ul {
+    padding: 0 10px;
+}
+
+.relate_search ul li {
+    position     : relative;
+    height       : 0.67*60px;
+    line-height  : 0.66*60px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.relate_search ul li b {
+    display      : block;
+    color        : #666666;
+    padding-right: 25%;
+    white-space  : nowrap;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    font-size    : 0.22*60px;
+}
+
+.relate_search ul li span {
+    color     : #999999;
+    position  : absolute;
+    width     : 25%;
+    height    : 0.66*60px;
+    right     : 0;
+    top       : 0;
+    text-align: right;
+    font-size : 0.18*60px;
+}
+
+/*热门搜索*/
+
+.hot_search {
+    padding: 0 0.2*60px;
+}
+
+.hot_search h3 {
+    font-size  : 0.24*60px;
+    height     : 0.26*60px;
+    line-height: 0.26*60px;
+    margin-top : 0.28*60px;
+    color      : #333;
+    position   : relative;
+    font-weight: normal;
+    font-style : normal;
+}
+
+.hot_search ul {
+    overflow: hidden;
+}
+
+.hot_search ul li {
+    float        : left;
+    background   : #fff;
+    border-radius: 0.52*60px;
+    height       : 0.52*60px;
+    line-height  : 0.52*60px;
+    margin       : 0.2*60px 0 0 0.2*60px;
+}
+
+.hot_search ul li a {
+    display    : block;
+    padding    : 0 0.2*60px;
+    font-size  : 0.22*60px;
+    color      : #666;
+    white-space: nowrap;
+}
+
+.hot_search ul li.hot a {
+    color: #e60000;
+}
+
+/*历史搜索*/
+.search_history {
+    padding: 0 0.2*60px;
+}
+
+.search_history h3 {
+    font-size  : 0.24*60px;
+    height     : 0.26*60px;
+    line-height: 0.26*60px;
+    margin-top : 0.28*60px;
+    color      : #333;
+    position   : relative;
+    font-weight: normal;
+    font-style : normal;
+}
+
+.search_history h3 a {
+    background     : url('http://o.bookschina.com/images/wap/deletehisttory.png') no-repeat center;
+    background-size: 0.24*60px;
+    height         : 0.26*60px;
+    position       : absolute;
+    right          : 0;
+    top            : 0;
+    width          : 0.26*60px;
+    text-indent    : -999px;
+    overflow       : hidden;
+}
+
+.search_history ul {
+    overflow: hidden;
+}
+
+.search_history ul li {
+    float        : left;
+    background   : #fff;
+    border-radius: 0.52*60px;
+    height       : 0.52*60px;
+    line-height  : 0.52*60px;
+    margin       : 0.2*60px 0 0 0.2*60px;
+}
+
+.search_history ul li a {
+    display    : block;
+    padding    : 0 0.2*60px;
+    font-size  : 0.22*60px;
+    color      : #666;
+    white-space: nowrap;
+}
+
+/*删除历史记录*/
+.deleteHistoryDialog {
+    position     : fixed;
+    width        : 80%;
+    left         : 10%;
+    background   : #fff;
+    top          : 20%;
+    border-radius: 0.1*60px;
+    z-index      : 1001;
+    display      : none;
+}
+
+.deleteHistoryDialog .msg {
+    height       : 1.58*60px;
+    border-bottom: 1px solid #f3f3f3;
+    line-height  : 1.58*60px;
+    color        : #333333;
+    font-size    : 0.24*60px;
+    text-align   : center;
+}
+
+.deleteHistoryDialog .oparateBtn a {
+    font-size  : 0.24*60px;
+    float      : left;
+    width      : 50%;
+    text-align : center;
+    color      : #333333;
+    height     : 0.9*60px;
+    line-height: 0.9*60px;
+}
+
+.deleteHistoryDialog .oparateBtn a.confirm {
+    border-right: 1px solid #f3f3f3;
+    color       : #e60000;
+}
+
+
+.maskLayer {
+    position  : fixed;
+    z-index   : 899;
+    background: rgba(0, 0, 0, 0.5);
+    left      : 0;
+    top       : 0;
+    width     : 100%;
+    height    : 100%;
+    display   : none;
+}
+
+.maskLayer1 {
+    position  : fixed;
+    z-index   : 899;
+    background: rgba(0, 0, 0, 0.5);
+    left      : 0;
+    top       : 0;
+    width     : 100%;
+    height    : 100%;
+    display   : none;
+}
+
+.shopcarfloatbox {
+    position   : fixed;
+    right      : 0*60px;
+    bottom     : 2*60px;
+    height     : 0.9*60px;
+    width      : 0.9*60px;
+    line-height: 0.25*60px;
+}
+
+.shopcarfloatbox a {
+    display: block;
+}
+
+.shopcarfloatbox a img {
+    width    : 100%;
+    font-size: 12px;
+}
+
+/*吐司*/
+.prompt {
+    position   : fixed;
+    width      : 100%;
+    left       : 0;
+    top        : 50%;
+    z-index    : 9999;
+    height     : 0.64*60px;
+    margin-top : -0.32*60px;
+    text-align : center;
+    line-height: 0;
+}
+
+.prompt span {
+    display      : inline-block;
+    height       : 0.64*60px;
+    color        : #fff;
+    line-height  : 0.64*60px;
+    padding      : 0 0.18*60px;
+    background   : rgba(0, 0, 0, 0.8);
+    font-size    : 0.24*60px;
+    border-radius: 0.05*60px;
+}
+
+.layui-m-layer { position: relative; z-index: 19891014; }
+
+.layui-m-layer * { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; }
+
+.layui-m-layermain, .layui-m-layershade { position: fixed; left: 0; top: 0; width: 100%; height: 100%; }
+
+.layui-m-layershade { background-color: rgba(0,0,0,.7); pointer-events: auto; }
+
+.layui-m-layermain { display: table; font-family: Helvetica,arial,sans-serif; pointer-events: none; }
+
+.layui-m-layermain .layui-m-layersection { display: table-cell; vertical-align: middle; text-align: center; }
+
+.layui-m-layerchild { position: relative; display: inline-block; text-align: left; background-color: #fff; font-size: 14px; border-radius: 5px; box-shadow: 0 0 8px rgba(0,0,0,.1); pointer-events: auto; -webkit-overflow-scrolling: touch; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-duration: .3s; animation-duration: .3s; }
+
+.layui-m-layer0 .layui-m-layerchild { width: 90%; max-width: 640px; }
+
+.layui-m-layer1 .layui-m-layerchild { border: none; border-radius: 0; }
+
+.layui-m-layer2 .layui-m-layerchild { width: auto; max-width: 260px; min-width: 40px; border: none; background: 0 0; box-shadow: none; color: #fff; }
+
+.layui-m-layerchild h3 { padding: 0 10px; height: 60px; line-height: 60px; font-size: 16px; font-weight: 400; border-radius: 5px 5px 0 0; text-align: center; }
+
+.layui-m-layerbtn span, .layui-m-layerchild h3 { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+
+.layui-m-layercont { padding: 50px 30px; line-height: 22px; text-align: center; }
+
+.layui-m-layer1 .layui-m-layercont { padding: 0; text-align: left; }
+
+.layui-m-layer2 .layui-m-layercont { text-align: center; padding: 0; line-height: 0; }
+
+
+.layui-m-layerbtn, .layui-m-layerbtn span { position: relative; text-align: center; border-radius: 0 0 5px 5px; }
+
+.layui-m-layer2 .layui-m-layercont p { margin-top: 20px; }
+
+.layui-m-layer2 .layui-m-layercont > div { line-height: 22px; padding-top: 7px; margin-bottom: 20px; font-size: 14px; }
+
+.layui-m-layerbtn { display: flex; display: -moz-flex; display: -webkit-flex; width: 100%; height: 50px; line-height: 50px; font-size: 0; border-top: 1px solid #D0D0D0; background-color: #F2F2F2; }
+
+.layui-m-layerbtn span { display: block; -moz-box-flex: 1; box-flex: 1; -webkit-box-flex: 1; font-size: 14px; cursor: pointer; }
+
+.layui-m-layerbtn span[yes] { color: #40AFFE; }
+
+.layui-m-layerbtn span[no] { border-right: 1px solid #D0D0D0; border-radius: 0 0 0 5px; }
+
+.layui-m-layerbtn span:active { background-color: #F6F6F6; }
+
+.layui-m-layerend { position: absolute; right: 7px; top: 10px; width: 30px; height: 30px; border: 0; font-weight: 400; background: 0 0; cursor: pointer; -webkit-appearance: none; font-size: 30px; }
+
+.layui-m-layerend::after, .layui-m-layerend::before { position: absolute; left: 5px; top: 15px; content: ''; width: 18px; height: 1px; background-color: #999; transform: rotate(45deg); -webkit-transform: rotate(45deg); border-radius: 3px; }
+
+.layui-m-layerend::after { transform: rotate(-45deg); -webkit-transform: rotate(-45deg); }
+
+body .layui-m-layer .layui-m-layer-footer { position: fixed; width: 95%; max-width: 100%; margin: 0 auto; left: 0; right: 0; bottom: 10px; background: 0 0; }
+
+.layui-m-layer-footer .layui-m-layercont { padding: 20px; border-radius: 5px 5px 0 0; background-color: rgba(255,255,255,.8); }
+
+.layui-m-layer-footer .layui-m-layerbtn { display: block; height: auto; background: 0 0; border-top: none; }
+
+.layui-m-layer-footer .layui-m-layerbtn span { background-color: rgba(255,255,255,.8); }
+
+.layui-m-layer-footer .layui-m-layerbtn span[no] { color: #FD482C; border-top: 1px solid #c2c2c2; border-radius: 0 0 5px 5px; }
+
+.layui-m-layer-footer .layui-m-layerbtn span[yes] { margin-top: 10px; border-radius: 5px; }
+
+body .layui-m-layer .layui-m-layer-msg { width: auto; max-width: 90%; margin: 0 auto; background-color: rgba(0,0,0,.7); color: #fff; }
+
+.layui-m-layer-msg .layui-m-layercont { padding: 10px 20px; }
+
+.pageWrap .layui-m-layer .layui-m-layer-msg {
+    top: 0;
+}
+
+.personalcenter .layui-m-layer .layui-m-layer-msg {
+    top: 0;
+}

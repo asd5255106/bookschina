@@ -1,0 +1,740 @@
+@charset "UTF-8";
+/* 公共样式 */
+.content {
+  margin-top: 55px;
+}
+
+.login .content {
+  margin-top: 70px;
+}
+
+.header {
+  background: #fff;
+  box-shadow: 0px 0px 10px #d4d2d3;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 900;
+}
+
+.header-positive {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 900;
+}
+
+.headerInner {
+  position: relative;
+  height: 52.8px;
+}
+
+.headerInner .returnBtn {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.headerInner .returnBtn a {
+  display: block;
+  height: 52.8px;
+  width: 36px;
+  background: url("http://o.bookschina.com/images/wap/returnbtnicon.png") no-repeat center;
+  background-size: 12px 21px;
+}
+
+.head_lable {
+  text-align: center;
+  height: 52.8px;
+  line-height: 52.8px;
+}
+
+.head_lable span {
+  display: block;
+  font-size: 18px;
+  color: #333333;
+}
+
+.editBtn {
+  position: absolute;
+  width: 51px;
+  height: 52.8px;
+  line-height: 52.8px;
+  text-align: center;
+  right: 45px;
+  top: 0;
+  cursor: pointer;
+  font-size: 13.2px;
+  color: #333;
+}
+
+.shortCut {
+  position: absolute;
+  width: 45px;
+  height: 52.8px;
+  right: 0;
+  top: 0;
+  background: url("http://o.bookschina.com/images/wap/shortcut.png") no-repeat center;
+  background-size: 21px 3.6px;
+  cursor: pointer;
+}
+
+.shortCutLayer {
+  position: absolute;
+  top: 40.8px;
+  right: 6px;
+  display: block;
+  z-index: 9999;
+}
+
+.shortCutLayer .shortCutInner {
+  position: relative;
+  padding-top: 12px;
+}
+
+.shortCutLayer .shortCutInner .uptriangle {
+  position: absolute;
+  background: url("http://o.bookschina.com/images/wap/Triangle.png") no-repeat center;
+  background-size: 21.6px 13.2px;
+  width: 21.6px;
+  height: 13.2px;
+  right: 6px;
+  top: 0;
+}
+
+.shortCutLayer ul {
+  background: url("http://o.bookschina.com/images/wap/dot.png") repeat;
+  border-radius: 6px;
+  padding: 0 6px;
+}
+
+.shortCutLayer ul li {
+  border-bottom: 1px solid #999999;
+  width: 120px;
+}
+
+.shortCutLayer ul li:last-child {
+  border-bottom: none;
+}
+
+.shortCutLayer ul li a {
+  color: #ffffff;
+  font-size: 14.4px;
+  display: block;
+  height: 42px;
+  line-height: 42px;
+  line-height: 42px;
+  padding-left: 46.2px;
+}
+
+.shortCutLayer ul li.homeLink {
+  background: url("http://o.bookschina.com/images/wap/homeShortCut.png") no-repeat 10.2px;
+  background-size: 20.4px 20.4px;
+}
+
+.shortCutLayer ul li.tstLink {
+  background: url("http://o.bookschina.com/images/wap/tstShortCut.png") no-repeat 10.2px;
+  background-size: 20.4px 20.4px;
+}
+
+.shortCutLayer ul li.searchLink {
+  background: url("http://o.bookschina.com/images/wap/searchshortCut.png") no-repeat 10.2px;
+  background-size: 20.4px 20.4px;
+}
+
+.shortCutLayer ul li.kindLink {
+  background: url("http://o.bookschina.com/images/wap/kindshortCut.png") no-repeat 10.2px;
+  background-size: 20.4px 16.8px;
+}
+
+.shortCutLayer ul li.carLink {
+  background: url("http://o.bookschina.com/images/wap/carshortCut.png") no-repeat 10.2px;
+  background-size: 20.4px 20.4px;
+}
+
+.shortCutLayer ul li.accountLink {
+  background: url("http://o.bookschina.com/images/wap/accountShortCut.png") no-repeat 10.2px;
+  background-size: 19.2px 19.2px;
+}
+
+.headerInner .detailNav ul {
+  overflow: hidden;
+  padding: 0 24px;
+}
+
+.headerInner .detailNav ul li {
+  float: left;
+  width: 33.33%;
+  height: 52.8px;
+  text-align: center;
+  line-height: 52.8px;
+}
+
+.headerInner .detailNav ul li a {
+  font-size: 14.4px;
+  color: #333333;
+  display: block;
+  height: 52.8px;
+  position: relative;
+}
+
+.headerInner .detailNav ul li.current a {
+  color: #e60000;
+}
+
+.headerInner .detailNav ul li span {
+  position: absolute;
+  height: 3.6px;
+  background: #fff;
+  bottom: 0;
+  width: 30px;
+  left: 50%;
+  margin-left: -15px;
+}
+
+.headerInner .detailNav ul li.current span {
+  background: #e60000;
+}
+
+.common-header .headerInner .searchWrap {
+  height: 36px;
+  border-radius: 36px;
+  background: #f3f3f3;
+  overflow: hidden;
+  margin: 0 50px 0 40px;
+}
+
+.common-header .headerInner .searchWrap span {
+  display: block;
+  padding: 6px 0;
+  padding-left: 38.4px;
+  background: url(http://o.bookschina.com/images/wap/searchcircle.png) no-repeat 9.6px center;
+  background-size: 15px;
+  cursor: pointer;
+}
+
+.common-header .headerInner .searchWrap span input {
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  border: none;
+  width: 100%;
+  background: #f3f3f3;
+  font-size: 14.4px;
+  color: #8e8e8e;
+}
+
+/*头部css*/
+.common-header {
+  background: #fff;
+  box-shadow: 0px 0px 6px #d4d2d3;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 901;
+}
+
+.common-header.header-positive {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 900;
+}
+
+.common-header .headerInner {
+  position: relative;
+  height: 52.8px;
+}
+
+.common-header .inner {
+  padding-top: 8px;
+  box-sizing: border-box;
+}
+
+.common-header .headerInner .returnBtn {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.common-header .headerInner .returnBtn a {
+  display: block;
+  height: 52.8px;
+  width: 36px;
+  background: url("../../assets/images/common/returnbtnicon.png") no-repeat center;
+  background-size: 12px 21px;
+}
+
+.common-header .head_lable {
+  text-align: center;
+  height: 52.8px;
+  line-height: 52.8px;
+}
+
+.common-header .head_lable span {
+  font-size: 18px;
+  color: #333333;
+  display: block;
+}
+
+.common-header .shortCut {
+  position: absolute;
+  width: 45px;
+  height: 52.8px;
+  right: 0;
+  top: 0;
+  background: url("../../assets/images/common/shortcut.png") no-repeat center;
+  background-size: 21px 3.6px;
+  cursor: pointer;
+}
+
+.common-header .shortCutLayer {
+  position: absolute;
+  top: 40.8px;
+  right: 6px;
+}
+
+.common-header .shortCutLayer .shortCutInner {
+  position: relative;
+  padding-top: 12px;
+}
+
+.common-header .shortCutLayer .shortCutInner .uptriangle {
+  position: absolute;
+  background: url("../../assets/images/common/Triangle.png") no-repeat center;
+  background-size: 21.6px 13.2px;
+  width: 21.6px;
+  height: 13.2px;
+  right: 6px;
+  top: 0;
+}
+
+.common-header .shortCutLayer ul {
+  background: url("../../assets/images/common/dot.png") repeat;
+  border-radius: 6px;
+  padding: 0 6px;
+}
+
+.common-header .shortCutLayer ul li {
+  border-bottom: 1px solid #999999;
+  width: 120px;
+}
+
+.common-header .shortCutLayer ul li:last-child {
+  border-bottom: none;
+}
+
+.common-header .shortCutLayer ul li a {
+  color: #ffffff;
+  font-size: 14.4px;
+  display: block;
+  height: 42px;
+  line-height: 42px;
+  line-height: 42px;
+  padding-left: 46.2px;
+}
+
+.common-header .shortCutLayer ul li.homeLink {
+  background: url("../../assets/images/common/homeShortCut.png") no-repeat 10.2px;
+  background-size: 20.4px 20.4px;
+}
+
+.common-header .shortCutLayer ul li.tstLink {
+  background: url("../../assets/images/common/tstShortCut.png") no-repeat 10.2px;
+  background-size: 20.4px 20.4px;
+}
+
+.common-header .shortCutLayer ul li.searchLink {
+  background: url("../../assets/images/common/searchshortCut.png") no-repeat 10.2px;
+  background-size: 20.4px 20.4px;
+}
+
+.common-header .shortCutLayer ul li.kindLink {
+  background: url("../../assets/images/common/kindshortCut.png") no-repeat 10.2px;
+  background-size: 20.4px 16.8px;
+}
+
+.common-header .shortCutLayer ul li.carLink {
+  background: url("../../assets/images/common/carshortCut.png") no-repeat 10.2px;
+  background-size: 20.4px 20.4px;
+}
+
+.common-header .shortCutLayer ul li.accountLink {
+  background: url("../../assets/images/common/accountShortCut.png") no-repeat 10.2px;
+  background-size: 19.2px 19.2px;
+}
+
+/* 错误提示 */
+.errorTip {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 98;
+}
+
+.errorTip div {
+  display: table;
+  color: white;
+  font-size: 16.8px;
+  width: 100%;
+  height: 100%;
+}
+
+.errorTip div p {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.errorTip div p span {
+  display: inline-block;
+  padding: 15px 12px;
+  margin: 0 60px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*遮罩层*/
+.popLayerbg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  filter: Alpha(opacity=50);
+  left: 0;
+  top: 0;
+  z-index: 998;
+  display: none;
+}
+
+/* goodslist */
+/*加载*/
+.loading {
+  font-size: 14.4px;
+  color: #999999;
+  text-align: center;
+  height: 48px;
+  line-height: 48px;
+  background: #fff url(http://o.bookschina.com/images/wap/loading.gif) no-repeat center;
+  background-size: 108.6px 43.2px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.loading.over {
+  text-indent: 0;
+  background: #fff;
+}
+
+.loading {
+  font-size: 14.4px;
+  color: #999999;
+  text-align: center;
+  height: 36px;
+  line-height: 36px;
+  border-top: 1.2px solid #f3f3f3;
+}
+
+/*分页*/
+.pagination {
+  position: fixed;
+  bottom: 42px;
+  width: 66px;
+  left: 50%;
+  margin-left: -33px;
+  z-index: 900;
+  display: none;
+}
+
+.pagination b {
+  display: block;
+  height: 27px;
+  border-radius: 27px;
+  width: 66px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #cccccc;
+  font-size: 14.4px;
+  font-family: Arial;
+  display: table;
+  text-align: center;
+}
+
+.pagination b i {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*快速导航*/
+.sidebarNav {
+  position: fixed;
+  right: -1px;
+  bottom: 72px;
+  z-index: 995;
+}
+
+.sidebarNav dl {
+  overflow: hidden;
+  font-size: 12px;
+  padding-left: 54px;
+  position: relative;
+  height: 117.6px;
+}
+
+.sidebarNav dl dt {
+  width: 54px;
+  height: 42px;
+  cursor: pointer;
+  border-radius: 3px 0 0 3px;
+  padding-left: 6px;
+  text-align: center;
+  line-height: 13.2px;
+  background: rgba(0, 0, 0, 0.7);
+  display: table;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -21px;
+}
+
+.sidebarNav dl dt span {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #fff;
+  background: url("http://o.bookschina.com/images/wap/sidebarrightarrow.png") no-repeat left;
+  background-size: 6.6px 13.8px;
+}
+
+.sidebarNav.open dl dt span {
+  background: url("http://o.bookschina.com/images/wap/sidebarleftarrow.png") no-repeat left;
+  background-size: 6.6px 13.8px;
+}
+
+.sidebarNav dl dd {
+  width: 244.8px;
+  padding: 6px 6px;
+  background: #fff;
+  display: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.sidebarNav.open dl dd {
+  display: block;
+}
+
+.sidebarNav dl dd ul {
+  overflow: hidden;
+}
+
+.sidebarNav dl dd ul li {
+  float: left;
+  width: 25%;
+  margin: 4.8px 0;
+}
+
+.sidebarNav dl dd ul li a {
+  display: block;
+  color: #7e7b7f;
+  text-align: center;
+}
+
+.sidebarNav dl dd ul li .sideIcon {
+  display: block;
+}
+
+.sidebarNav dl dd ul li .sideIcon img {
+  width: 24px;
+  font-size: 12px;
+  display: block;
+  margin: auto;
+}
+
+.sidebarNav dl dd ul li b {
+  display: block;
+  font-size: 10.8px;
+  height: 16.8px;
+  line-height: 16.8px;
+  margin-top: 2.4px;
+}
+
+/*返回顶部*/
+.backTop {
+  display: block;
+  position: fixed;
+  bottom: 66px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  background: rgba(0, 0, 0, 0.7) url("../../assets/images/goodslist/sidebarbacktop.png") no-repeat center;
+  background-size: 13.8px 19.8px;
+  z-index: 999;
+}
+
+.backTop a {
+  display: block;
+  height: 42px;
+  width: 54px;
+}
+
+/*筛选遮罩层*/
+.maskLayer {
+  position: fixed;
+  z-index: 899;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+/*全屏遮罩层*/
+.layerMask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 990;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/*批量购买*/
+.zeroStockWrap {
+  padding-bottom: 24px;
+  border-radius: 9px;
+  position: relative;
+}
+
+.zeroStockWrap h3 {
+  padding: 0 30px;
+  color: #e82323;
+  text-align: left;
+  font-size: 14.4px;
+  height: 45.6px;
+  line-height: 45.6px;
+  margin-top: 14.4px;
+}
+
+.zeroStockWrap .layui-m-layercont {
+  padding: 0;
+}
+
+.zeroStockWrap .zeroStock {
+  text-align: left;
+  padding: 0 30px;
+  overflow-y: auto;
+  max-height: 216px;
+}
+
+.zeroStockWrap .zeroStock ul li {
+  line-height: 21.6px;
+  font-size: 13.2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.zeroStockWrap .layui-m-layerbtn {
+  display: block;
+  margin-top: 24px;
+  text-align: center;
+  background: none;
+  border: none;
+  height: 30px;
+  line-height: 30px;
+  color: #333;
+}
+
+.zeroStockWrap .layui-m-layerbtn span {
+  padding: 0 15.6px;
+  margin: 0 30px;
+  display: inline-block;
+  border: 1px solid #bbbbbb;
+  height: 30px;
+  font-size: 13.2px;
+  border-radius: 3.6px;
+}
+
+.zeroStockWrap .layui-m-layerbtn span[yes] {
+  color: #333;
+}
+
+.zeroStockWrap .closeLayerBtn {
+  background: url("http://o.bookschina.com/images/wap/closelayericon.png") no-repeat center;
+  background-size: cover;
+  position: absolute;
+  height: 15.6px;
+  width: 15.6px;
+  top: 9px;
+  right: 9px;
+  cursor: pointer;
+}
+
+/*微信分享遮罩层*/
+.weixinShareWrap {
+  z-index: 1200000000;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  top: 0;
+  height: 100%;
+  left: 0;
+}
+
+.weixinShareWrap .weixinShare {
+  height: 100%;
+}
+
+.weixinShareWrap .weixinShare .shareTip {
+  overflow: hidden;
+}
+
+.weixinShareWrap .weixinShare .shareTip .shareArrow {
+  overflow: hidden;
+  margin-top: 18px;
+}
+
+.weixinShareWrap .weixinShare .shareTip .shareArrow span {
+  float: right;
+  width: 127.2px;
+  height: 136.8px;
+  margin-right: 24px;
+  background: url("http://o.bookschina.com/images/wap/uplayeruparrow.png") no-repeat center;
+  background-size: cover;
+}
+
+.weixinShareWrap .weixinShare .shareTip .maskShareText {
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 24px;
+  margin-top: 36px;
+}
+
+.weixinShareWrap .weixinShare .shareTip .shareCloseBtn {
+  display: block;
+  width: 120.6px;
+  height: 46.8px;
+  background: url("http://o.bookschina.com/images/wap/myknow.png") no-repeat;
+  background-size: cover;
+  margin: 27px auto 0;
+  cursor: pointer;
+}
+
+/*广告栏*/
+.floorBanner {
+  margin-top: 9.6px;
+}
+
+.floorBanner img {
+  width: 100%;
+}

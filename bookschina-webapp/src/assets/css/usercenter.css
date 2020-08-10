@@ -1,0 +1,450 @@
+/*我的中图*/
+.myHead {
+  background: #e60000;
+  padding: 72px 12px 9px;
+  position: relative;
+}
+.myHead .userInfor {
+  background: #fff;
+  text-align: center;
+  position: relative;
+  border-top: 1px solid #fff;
+}
+.myHead .userInfor .headPortrait {
+  position: absolute;
+  height: 72px;
+  width: 72px;
+  left: 50%;
+  top: -36px;
+  background: url('../../assets/images/usercenter/headportraitbg.png') no-repeat center;
+  background-size: cover;
+  padding: 6px;
+  margin-left: -36px;
+}
+.myHead .userInfor .headPortrait a {
+  display: block;
+}
+.myHead .userInfor .headPortrait img {
+  height: 75px;
+  width: 100%;
+  border-radius: 100%;
+}
+.myHead .userInfor .userName {
+  font-size: 14.4px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #333333;
+  margin-top: 44.4px;
+}
+.myHead .userInfor .userName a {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  background: url('../../assets/images/usercenter/inforedit.png') no-repeat center 3px;
+  background-size: 15.6px 15px;
+  margin: 0 0 0 4.2px;
+}
+/*.userLeave i{display:inline-block;border-left:1px solid #dddddd; height:*60px; width:.02*60px;}*/
+.myHead .userLeave {
+  font-size: 13.2px;
+  /*line-height:0.32*60px;*/
+  padding: 16.8px 0 12px;
+}
+.myHead .userLeave.nomargin {
+  padding-top: 0px;
+  font-family: Microsoft Yahei;
+  font-size: 10.8px;
+  color: #666;
+}
+.myHead .userLeave .startLeave {
+  color: #ec1b08;
+  font-family: Microsoft Yahei, Helvetica, Arial;
+}
+.myHead .userLeave .startLeave i {
+  color: #fff;
+  width: 16.8px;
+  font-size: 10.8px;
+  line-height: 22.2px;
+  height: 19.2px;
+  display: inline-block;
+  margin-right: 3px;
+}
+.myHead .userLeave .startLeave i.star1 {
+  background: url(../../assets/images/usercenter/star1.png) no-repeat left center;
+  background-size: 16.8px 14.4px;
+}
+.myHead .userLeave .startLeave i.star2 {
+  background: url(http://o.bookschina.com/images/wap/star2.png) no-repeat left center;
+  background-size: 16.8px 14.4px;
+}
+.myHead .userLeave .startLeave i.star3 {
+  background: url(http://o.bookschina.com/images/wap/star3.png) no-repeat left center;
+  background-size: 16.8px 14.4px;
+}
+.myHead .userLeave .integralNum {
+  font-family: Microsoft Yahei, Helvetica, Arial;
+  color: #333;
+  border-left: 1px solid #bfbfbf;
+  padding-left: 10.8px;
+  margin-left: 10.8px;
+}
+.myHead .userLeave .integralNum span {
+  font-family: Arial;
+  color: #ec1b08;
+}
+.myHead .signIn {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url('http://o.bookschina.com/images/wap/signIn2.png') no-repeat center;
+  background-size: 21px;
+  left: 9.6px;
+  top: 4.2px;
+  display: none;
+}
+.myHead .signIn a {
+  height: 24px;
+  display: none;
+}
+.myHead .setUp {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url('../../assets/images/usercenter/setUp.png') no-repeat center;
+  background-size: 21.6px 20.4px;
+  right: 10.8px;
+  top: 6px;
+}
+.myHead .setUp a {
+  display: block;
+  height: 24px;
+}
+.orderBar {
+  padding: 0 12px;
+  background: #fff;
+  margin-top: 6px;
+}
+.orderBar .orderTit {
+  border-bottom: 1px solid #f3f3f3;
+}
+.orderBar .orderTit a {
+  display: block;
+  height: 51.6px;
+  overflow: hidden;
+  line-height: 51.6px;
+}
+.orderBar .orderTit b {
+  float: left;
+  color: #333333;
+  font-size: 16.8px;
+}
+.orderBar .orderTit span {
+  float: right;
+  color: #333;
+  background: url('../../assets/images/usercenter/accountrightbtn.png') no-repeat right center;
+  background-size: 4.8px 9px;
+  padding-right: 10.8px;
+  font-size: 13.2px;
+}
+.orderCon {
+  border-bottom: 1px solid #f3f3f3;
+}
+.orderCon ul {
+  overflow: hidden;
+}
+.orderCon ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  overflow: hidden;
+  line-height: 0;
+}
+.orderCon ul li a {
+  display: block;
+}
+.orderCon ul li i {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  position: relative;
+  margin-top: 18px;
+}
+.orderCon ul li i img {
+  display: block;
+  width: 100%;
+}
+.orderCon ul li i span {
+  font-size: 9.6px;
+  position: absolute;
+  background: #e60000;
+  color: #fff;
+  height: 15px;
+  min-width: 15px;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  padding: 0 3px;
+  top: -7.5px;
+  left: 18px;
+}
+.orderCon ul li b {
+  font-size: 13.2px;
+  color: #333;
+  display: block;
+  line-height: 19.2px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+/*用户资产*/
+.assetsBar {
+  padding: 0 12px;
+  background: #fff;
+}
+.assetsBar ul {
+  overflow: hidden;
+}
+.assetsBar ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.assetsBar ul li a {
+  display: block;
+  overflow: hidden;
+  padding: 15.6px 0;
+}
+.assetsBar ul li span {
+  color: #e60000;
+  font-size: 14.4px;
+  font-weight: bold;
+  display: block;
+  line-height: 20.4px;
+}
+.assetsBar ul li b {
+  color: #333333;
+  font-size: 13.2px;
+  display: block;
+  line-height: 19.2px;
+  margin-top: 10.2px;
+}
+/*用户快捷方式*/
+.shortcut {
+  padding: 0 12px;
+  background: #fff;
+  margin-top: 6px;
+}
+.shortcut ul {
+  overflow: hidden;
+}
+.shortcut ul li {
+  float: left;
+  width: 25%;
+  border-bottom: 1px solid #f3f3f3;
+  border-right: 1px solid #f3f3f3;
+  text-align: center;
+}
+.shortcut ul li a {
+  display: block;
+  overflow: hidden;
+  line-height: 0;
+}
+.shortcut ul li i {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  margin-top: 30px;
+}
+.shortcut ul li i img {
+  width: 100%;
+  display: block;
+}
+.shortcut ul li b {
+  display: block;
+  color: #000334;
+  font-size: 13.2px;
+  line-height: 19.2px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+/*为你推荐*/
+.recommendWrap {
+  margin-top: 6px;
+}
+.recommendWrap .recomandTit {
+  position: relative;
+  z-index: 2;
+  box-shadow: 1px 0px 3px #dddcdd;
+  text-align: center;
+  background: #fff;
+  line-height: 0;
+  height: 40.8px;
+  overflow: hidden;
+}
+.recommendWrap .recomandTit img {
+  height: 40.8px;
+  display: block;
+  margin: auto;
+}
+.recomandCon {
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+.recomandCon ul {
+  overflow: hidden;
+}
+.recomandCon ul li {
+  float: left;
+  width: 50%;
+  background: #fff;
+  border-bottom: 2px solid #f3f3f3;
+  border-right: 2px solid #f3f3f3;
+}
+.recomandCon ul li a {
+  display: block;
+}
+.recomandCon ul li .cover {
+  padding: 10.2px 9px 6px;
+  text-align: center;
+}
+.recomandCon ul li .cover img {
+  height: 120px;
+  max-width: 100%;
+  font-size: 12px;
+}
+.recomandCon ul li .name {
+  padding: 0 9px;
+  font-size: 13.2px;
+  line-height: 18px;
+  height: 36px;
+  color: #000000;
+  overflow: hidden;
+}
+.recomandCon ul li .priceWrap {
+  overflow: hidden;
+  line-height: 20.4px;
+  padding: 3px 9px 9px;
+}
+.recomandCon ul li .priceWrap span {
+  float: left;
+  color: #e60000;
+  font-size: 14.4px;
+  font-weight: bold;
+}
+.recomandCon ul li .priceWrap del {
+  float: left;
+  font-size: 12px;
+  color: #999999;
+  margin-left: 10.2px;
+}
+/*退出登录*/
+.signOut {
+  height: 49.2px;
+  line-height: 49.2px;
+}
+.signOut a {
+  display: block;
+  font-size: 14.4px;
+  color: #333333;
+  text-align: center;
+}
+/*网站底部*/
+.webNav {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  box-shadow: 0px 0px 5px #8e8e8e;
+  z-index: 10;
+}
+.webNav ul {
+  overflow: hidden;
+}
+.webNav ul li {
+  float: left;
+  width: 20%;
+  text-align: center;
+  height: 52.8px;
+}
+.webNav ul li a {
+  color: #333333;
+  font-size: 13.2px;
+  display: block;
+  height: 52.8px;
+}
+.webNav ul li.cur a {
+  color: #e60000;
+}
+.webNav ul li a img {
+  width: 21.6px;
+  margin: auto;
+  display: block;
+  margin-top: 7.8px;
+  height: 21.6px;
+}
+.webNav ul li a b {
+  display: block;
+  text-align: center;
+  line-height: 30px;
+}
+.kindNavWrap {
+  position: relative;
+  z-index: 19;
+}
+.kindNavFixed.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.kindNavRelative {
+  position: relative;
+  background: #fff;
+}
+.kindNav {
+  position: relative;
+}
+.kindNav ul {
+  overflow: hidden;
+  padding: 0 12px;
+}
+.kindNav ul li {
+  float: left;
+  width: 33.33333333%;
+  text-align: center;
+  margin: 9.6px 0 0;
+  height: 40.8px;
+  border: 1.2px solid #fff;
+  border-bottom: none;
+  border-radius: 9px 9px 0 0;
+  cursor: pointer;
+}
+.kindNav ul li.cur {
+  border: 1.2px solid #f3f3f3;
+  border-bottom: none;
+  background: #fff;
+}
+.kindNav ul li.tejia.cur {
+  border: 1.2px solid #fff;
+  border-bottom: none;
+  background: none;
+}
+.kindNav ul li span {
+  display: block;
+  margin: 0 9px;
+  height: 31.2px;
+  border-radius: 31.2px;
+  line-height: 31.2px;
+  color: #333333;
+  background: #f3f3f3;
+  font-size: 13.2px;
+}
+.kindNav ul li.cur span {
+  background: #fff;
+  color: #dc2230;
+}
+.kindNav ul li.tejia.cur span {
+  color: #dc2230;
+  background: #f3f3f3;
+}

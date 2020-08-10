@@ -1,0 +1,239 @@
+/* 组件 */
+.van-uploader__upload-icon,
+.van-uploader__file-icon {
+    right: 6px;
+    bottom: 5px;
+}
+
+.van-image{
+    left: -7px;
+}
+
+.van-uploader__input-wrapper .van-button--default{
+    color      : #666666;
+    font-size  : 0.22*60px;
+    line-height: 0.32*60px;
+}
+
+.van-uploader__input-wrapper .van-button--default{
+    border: none;
+}
+
+.van-uploader__input-wrapper .van-button{
+    height: 0.5*60px;
+}
+
+/* 修改中心样式 */
+.xiu .personalInfor {
+    background: #fff;
+}
+
+.xiu .portraitWrap {
+    text-align: center;
+    overflow  : hidden;
+    cursor    : pointer;
+    position  : relative;
+}
+
+.xiu .portraitWrap #file {
+    position: absolute;
+    display : block;
+    width   : 100%;
+    height  : 100%;
+    top     : 0;
+    left    : 0;
+    opacity : 0;
+    filter  : alpha(opacity=0);
+}
+
+.xiu .portraitWrap .portrait {
+    cursor         : pointer;
+    width          : 1.1*60px;
+    height         : 1.1*60px;
+    margin         : 0.2*60px auto 0;
+    background     : url('http://o.bookschina.com/images/wap/portrait.png') no-repeat;
+    background-size: 1.1*60px;
+    border-radius  : 100%;
+    overflow       : hidden;
+}
+
+.xiu .portraitWrap .portrait img {
+    width : 100%;
+    height: 1.1*60px;
+}
+
+.xiu .portraitWrap .text {
+    color      : #666666;
+    font-size  : 0.22*60px;
+    line-height: 0.32*60px;
+    margin-top : 0.15*60px;
+}
+
+.xiu .personalInfor ul {
+    padding: 0.2*60px 0.2*60px 0;
+}
+
+.xiu .personalInfor ul li {
+    border-top: 1px solid #f3f3f3;
+
+}
+
+.xiu .personalInfor ul li:nth-child(5) {
+    border-top: 5px solid #f6f4f5;
+}
+
+.xiu .personalInfor ul li a {
+    display : block;
+    overflow: hidden;
+}
+
+.xiu .personalInfor ul li b {
+    float      : left;
+    font-size  : 0.22*60px;
+    color      : #333333;
+    height     : 0.66*60px;
+    line-height: 0.66*60px;
+}
+
+.xiu .personalInfor ul li span {
+    float          : right;
+    color          : #666;
+    font-size      : 0.2*60px;
+    height         : 0.66*60px;
+    line-height    : 0.66*60px;
+    padding-right  : 0.25*60px;
+    margin-right   : 0.06*60px;
+    background     : url('http://o.bookschina.com/images/wap/personalRightarrow.png') no-repeat right center;
+    background-size: 0.13*60px 0.24*60px;
+}
+
+.xiu .personalInfor ul li input {
+    float        : right;
+    color        : #666;
+    font-size    : 0.2*60px;
+    height       : 0.66*60px;
+    line-height  : 0.66*60px;
+    padding-right: 0.25*60px;
+    margin-right : 0.06*60px;
+    border       : 1px solid #ccc;
+}
+
+.xiu .otherInfor {
+    margin-top: 0.09*60px;
+    background: #fff;
+}
+
+.xiu .otherInfor ul {
+    padding: 0 0.2*60px;
+}
+
+.xiu .otherInfor ul li {
+    border-top: 1px solid #f3f3f3;
+
+}
+
+.xiu .otherInfor ul li a {
+    display : block;
+    overflow: hidden;
+}
+
+.xiu .otherInfor ul li b {
+    float      : left;
+    font-size  : 0.22*60px;
+    color      : #333333;
+    height     : 0.66*60px;
+    line-height: 0.66*60px;
+}
+
+.xiu .otherInfor ul li span {
+    float          : right;
+    color          : #666;
+    font-size      : 0.2*60px;
+    height         : 0.66*60px;
+    line-height    : 0.66*60px;
+    padding-right  : 0.25*60px;
+    margin-right   : 0.06*60px;
+    background     : url('http://o.bookschina.com/images/wap/personalRightarrow.png') no-repeat right center;
+    background-size: 0.13*60px 0.24*60px;
+}
+
+/*退出登录*/
+
+.xiu1 .exitBtn {
+    position: fixed;
+    bottom  : 0;
+    left    : 0;
+    width   : 100%;
+}
+
+.xiu1 .exitBtn a {
+    color      : #fff;
+    display    : block;
+    height     : 0.88*60px;
+    background : #fff;
+    font-size  : 0.26*60px;
+    background : #e60000;
+    line-height: 0.88*60px;
+    text-align : center;
+}
+
+
+
+/*截图上传页面*/
+.xiu1 .clipbg {
+    display   : none;
+    position  : fixed;
+    background: black;
+    top       : 0;
+    z-index   : 999;
+    width     : 100%;
+    height    : 100%;
+    left      : 0;
+}
+
+.xiu1 .loadClipImg {
+    position     : absolute;
+    top          : 40%;
+    width        : 38%;
+    left         : 31%;
+    height       : 0.6*60px;
+    line-height  : 0.6*60px;
+    z-index      : 99999;
+    text-align   : center;
+    color        : #ffffff;
+    border-radius: 0.6*60px;
+    background   : #9f9f9f;
+    display      : block;
+    font-size    : 0.24*60px;
+}
+
+.xiu1 .clipbg #clipArea {
+    width : 100%;
+    height: 80%;
+    margin: auto;
+}
+
+.xiu1 .clipfooter {
+    overflow   : hidden;
+    background : #fff;
+    height     : 0.86*60px;
+    line-height: 0.86*60px;
+    width      : 100%;
+    position   : fixed;
+    left       : 0;
+    bottom     : 0px;
+    font-size  : 0.24*60px;
+    color      : #333333;
+}
+
+.xiu1 .clipfooter #clipback {
+    float  : left;
+    height : 0.86*60px;
+    padding: 0 0.38*60px;
+}
+
+.xiu1 .clipfooter #clipBtn {
+    float  : right;
+    height : 0.86*60px;
+    padding: 0 0.38*60px;
+}
